@@ -1,0 +1,16 @@
+<section class="work-detail-website-secondary">
+    <div class="row clearfix">
+        <div class="col col-4of12">
+            <a href="{{ ph.workdetailwebsitesecondaryurl }}" target="_blank">
+                <img class="work-detail-website-secondary-main-image" src="{{ page.media[ph.workdetailwebsitesecondarycontentmainimage].url }}" alt="{{ ph.workdetailwebsitesecondarycontentmainimagealt }}" />
+            <a/>
+        </div>
+        <div class="col col-8of12 container content">
+            <h4>{{ph.workdetailwebsitesecondaryheading}}</h4>
+            <p>{{ph.workdetailwebsitesecondarycontent}}</p>
+            {% if ph.workdetailwebsitesecondarybutton %}
+                <a class="button-link" href="{{ ph.workdetailwebsitesecondaryurl }}"><button class="dark-btn" type="button">{{ ph.workdetailwebsitesecondarybutton }}</button></a>
+            {% endif %}
+        </div>
+    </div>
+</section>

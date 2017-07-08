@@ -1,0 +1,126 @@
+{% embed 'partials/base.html.twig' %}
+
+{% set ph = page.header %}
+
+{% block content %}
+    <div class="main-content work-detail">
+        <section class="work-detail-header">
+            <div class="work-detail-img-box">
+                <img class="work-detail-full-img" src="{{ page.media[ph.heroimage].url }}" alt="{{ ph.heroimagealt }}" />
+                <div class="row clearfix container">
+                    <div class="col col-6of12 project">
+                        <h1 class="name">{{ page.title }}</h1>
+                        <p class="description">{{ page.content }}</p>
+                    </div>
+                    <div class="col col-6of12">
+
+                        {% if ph.circleteaserone == true %}
+                        <div class="close-up-circle large">
+                            <img src="{{ page.media[ph.circleteaseroneimage].url }}" alt="{{ ph.circleteaseronealt }}" />
+                        </div>
+                        {% endif %}
+
+                        {% if ph.circleteasertwo == true %}
+                        <div class="close-up-circle medium">
+                            <img src="{{ page.media[ph.circleteasertwoimage].url }}" alt="{{ ph.circleteasertwoalt }}" />
+                        </div>
+                         {% endif %}
+
+                        <div class="down-circle">
+                            <a href="#down">
+                                <img src="{{ url('theme://images/down-arrow.svg') }}" alt="An arrow to go down to images of the projects." />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="down">
+            {%if ph.middle == true %}
+                <div class="work-detail-img-box">
+                    <img class="work-detail-full-img" src="{{ page.media[ph.middleimage].url }}" alt="{{ ph.middlealt }}" />
+                </div>
+            {% endif %}
+        </section>
+
+        <section class="work-detail-extras">
+            <div class="row clearfix container u-pad mobile-pad-cont">
+                {% if ph.typography %}
+                    {% embed 'partials/work-detail-typography.html.twig' %}
+                    {% endembed %}
+                {% endif %}
+
+                {% if ph.colorpalette %}
+                    {% embed 'partials/work-detail-color-palette.html.twig' %}
+                    {% endembed %}
+                {% endif %}
+            </div>
+        </section>
+
+        {# Begin Primary Work section with two preview images #}
+        {% if ph.workdetailwebsiteprimary == true %}
+            {% embed 'partials/work-detail-website-primary.html.twig' %}
+            {% endembed %}
+        {% endif %}
+        {# End Primary Work section #}
+
+        {# Begin Secondary Work section with one preview #}
+        {% if ph.workdetailwebsitesecondary == true %}
+            {% embed 'partials/work-detail-website-secondary.html.twig' %}
+            {% endembed %}
+        {% endif %}
+        {# End Secondary Work section #}
+
+        {# Begin Last Work section with one preview #}
+        {% if ph.workdetailwebsitelast == true %}
+            {% embed 'partials/work-detail-website-last.html.twig' %}
+            {% endembed %}
+        {% endif %}
+        {# End Last Work section #}
+
+        {# Begin Tertiary Work section with one preview #}
+        {% if ph.workdetailwebsitetertiary == true %}
+            {% embed 'partials/work-detail-website-tertiary.html.twig' %}
+            {% endembed %}
+        {% endif %}
+        {# End Tertiary Work section #}
+
+
+        {# Begin Iconography Work section with one preview #}
+        {% if ph.workdetailiconography == true %}
+            {% embed 'partials/work-detail-iconography.html.twig' %}
+            {% endembed %}
+        {% endif %}
+        {# End Iconography Work section #}
+
+        {# Begin Footer Work section #}
+        {% if ph.workdetailwebsitefooter == true %}
+        <section class="work-detail-website-footer">
+            <div class="work-detail-full-img">
+                <img src="{{ page.media[ph.workdetailwebsitefooterimage].url }}" alt="{{ page.media[ph.workdetailwebsitefooterimagealt].url }}"/>
+            </div>
+            <div class="container u-pad mobile-pad-cont">
+                <div>
+                    <h4>{{ph.workdetailwebsitefooterheading}}</h4>
+                    <p>{{ph.workdetailwebsitefootercontent}}</p>
+                    {% if ph.workdetailwebsitefooterbutton %}
+                        <a class="button-link" href="{{ ph.workdetailwebsitefooterurl }}"><button class="dark-btn" type="button">{{ ph.workdetailwebsitefooterbutton }}</button></a>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        {# End Footer Work section #}
+
+
+        {% embed 'partials/footer-carousel.html.twig' %}
+        {% endembed %}
+
+        {% embed 'partials/cta-bar.html.twig' %}
+        {% endembed %}
+
+    </div>
+{% endblock %}
+
+{% endembed %}

@@ -1,0 +1,35 @@
+name: Kylebaconcreative
+version: 0.0.1
+description: "Custom Theme For Kyle Bacon Creative"
+icon: empire
+author:
+  name: Kyle Bacon Creative, LLC
+  email: hello@kylebaconcreative.com
+  url: http://www.kylebaconcreative.com
+homepage: https://github.com/l3aconator/kylebaconcreative
+demo: http://www.kylebaconcreative.com
+keywords: custom, theme, core, modern, fast, responsive, html5, css3
+bugs: hello@kylebaconcreative.com
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    default_lang:
+      type: text
+      size: x-small
+      label: Default lang
+      default: 'en'
+      validate:
+        type: text
+
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

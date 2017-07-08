@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<div class="main-content">
+        {% if body_classes == dark-bg %}
+        <div class="container text-white u-pad mobile-pad-cont">
+			{{ page.content }}
+        </div>
+		{% else %}
+		<div class="container u-pad mobile-pad-cont">
+			{{ page.content }}
+		</div>
+		{% endif %}
+	</div>
+{% endblock %}

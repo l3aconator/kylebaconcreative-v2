@@ -1,0 +1,120 @@
+// TYPOGRAPHY BASE
+
+body {
+  font-family: $sans-serif-base;
+  font-size: $body-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $serif-base;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+}
+
+h1 {
+  font-size: $h1;
+  letter-spacing: 0.05em;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 1px;
+    width: 30%;
+    top: 100%;
+    left: -40px;
+    border: 3px solid black;
+  }
+
+  &.white {
+
+    &:after {
+      border: 3px solid white;
+    }
+  }
+}
+
+h2,
+.h2 {
+  font-size: $h2;
+  letter-spacing: 0.1em;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 1px;
+    width: 8%;
+    top: 100%;
+    left: -40px;
+    border: 2px solid black;
+  }
+
+  &.white {
+
+    &:after {
+      border: 2px solid white;
+    }
+  }
+}
+
+h3,
+.h3 {
+  font-size: $h3;
+  letter-spacing: 0.1em;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 1px;
+    width: 8%;
+    top: 100%;
+    left: -40px;
+    border: 0px solid black;
+  }
+}
+
+h4 {
+  font-size: $h4;
+  letter-spacing: 0.1666em;
+}
+
+h6 {
+  font-size: $h6;
+  letter-spacing: 0.1666em;
+}
+
+p {
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+
+.text-link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 400ms ease-in;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #505050;
+    text-decoration: underline;
+  }
+}
+
+// Text Colors
+.text-white {
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>ai-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Concept-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="work-detail-page-basic_desktop" transform="translate(-81.000000, -611.000000)">
+            <g id="nav">
+                <g id="skills-tools" transform="translate(0.000000, 557.000000)">
+                    <g id="ai-icon" transform="translate(81.000000, 54.000000)">
+                        <rect id="ai-outline" stroke="#FFFFFF" stroke-width="4" x="0" y="0" width="38" height="38" rx="6"></rect>
+                        <path d="M22.0399999,25.49 L17.3799999,12.37 C17.2999999,12.13 17.1099999,12 16.8599999,12 L14.8799999,12 C14.6299999,12 14.4399999,12.13 14.3599999,12.37 L9.69999993,25.49 C9.58999993,25.81 9.73999993,26 10.0699999,26 L11.6199999,26 C11.8699999,26 12.0499999,25.88 12.1299999,25.63 L12.9621999,23.18 L18.7777999,23.18 L19.6099999,25.63 C19.6899999,25.88 19.8699999,26 20.1199999,26 L21.6699999,26 C21.9999999,26 22.1499999,25.81 22.0399999,25.49 L22.0399999,25.49 Z M13.696,21.02 L15.8699999,14.62 L18.0439999,21.02 L13.696,21.02 Z M24.82,14.4 L26.08,14.4 C26.37,14.4 26.53,14.24 26.53,13.95 L26.53,12.45 C26.53,12.16 26.37,12 26.08,12 L24.82,12 C24.53,12 24.37,12.16 24.37,12.45 L24.37,13.95 C24.37,14.24 24.53,14.4 24.82,14.4 L24.82,14.4 Z M24.82,26 L26.08,26 C26.37,26 26.53,25.84 26.53,25.55 L26.53,16.45 C26.53,16.16 26.37,16 26.08,16 L24.82,16 C24.53,16 24.37,16.16 24.37,16.45 L24.37,25.55 C24.37,25.84 24.53,26 24.82,26 L24.82,26 Z" id="Ai" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

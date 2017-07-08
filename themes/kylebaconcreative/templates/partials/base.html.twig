@@ -1,0 +1,123 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}" class="{{ page.header.body_classes }}">
+<head>
+
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script src="https://use.typekit.net/sfn1hrw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ url('theme://images/apple-touch-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url('theme://images/apple-touch-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url('theme://images/apple-touch-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('theme://images/apple-touch-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ url('theme://images/apple-touch-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ url('theme://images/apple-touch-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ url('theme://images/apple-touch-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url('theme://images/apple-touch-icon-152x152.png') }}" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-196x196.png') }}" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-96x96.png') }}" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-32x32.png') }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-16x16.png') }}" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon-128.png') }}" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="{{ url('theme://images/mstile-144x144.png') }}" />
+    <meta name="msapplication-square70x70logo" content="{{ url('theme://images/mstile-70x70.png') }}" />
+    <meta name="msapplication-square150x150logo" content="{{ url('theme://images/mstile-150x150.png') }}" />
+    <meta name="msapplication-wide310x150logo" content="{{ url('theme://images/mstile-310x150.png') }}" />
+    <meta name="msapplication-square310x310logo" content="{{ url('theme://images/mstile-310x310.png') }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css-compiled/styles.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('theme://js/jquery-1.12.0.min.js') %}
+        {% do assets.addJs('theme://js/scripts.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+        {% block header %}
+        <header class="mobile">
+            <nav class="mobile-nav">
+                <a href="/"><img class="mobile-logo-svg" src="{{  url('theme://images/secondary-logo.svg') }}" alt="Bacon Creative's logo"/></a>
+                <div class="js-menu-activate">
+                    <div class="menu-mobile js-menu-test">
+                        <span class="menu-text">Menu</span>
+                        <div class="menu-icon js-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                    {% include 'partials/navigation.html.twig' %}
+                <div class="mobile-filter-widget js-mobile-filter-widget hidden">
+                    {% if page.header.homewidget == true %}
+                        {% include 'partials/mobile-filter-list.html.twig' %}
+                    {% elseif page.header.workdetailwidget == true %}
+                        {% include 'partials/work-detail-widget.html.twig' %}
+                    {% elseif page.header.socialwidget == true %}
+                        {% include 'partials/social-media-widget.html.twig' %}
+                    {% endif %}
+
+                    <footer class="footer js-footer hidden">
+                        <div class="footer-copyright">&copy;2015&#150;2016, KYLE BACON</div>
+                    </footer>
+                </div>
+            </nav>
+        </header>
+        <div class="nav-container">
+            <div class="docked-nav">
+                <header>
+                    <nav class="main-nav">
+                        <a href="/"><img class="logo-svg" src="{{  url('theme://images/main-logo.svg') }}" alt="Bacon Creative's logo"/></a>
+                        <div class="js-menu-activate">
+                            <div class="menu-desktop">
+                                <span class="menu-text">Menu</span>
+                                <div class="menu-icon js-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                            {% include 'partials/navigation.html.twig' %}
+                        <footer class="footer js-footer hidden">
+                            <div class="footer-copyright">&copy;2015&#150;2016, KYLE BACON</div>
+                        </footer>
+                    </nav>
+                </header>
+
+                {% if page.header.homewidget == true %}
+                    {% include 'partials/desktop-filter-list.html.twig' %}
+                {% elseif page.header.workdetailwidget == true %}
+                    {% include 'partials/work-detail-widget.html.twig' %}
+                {% elseif page.header.socialwidget == true %}
+                    {% include 'partials/social-media-widget.html.twig' %}
+                {% endif %}
+
+            </div>
+        </div>
+        {% endblock %}
+
+        {% block body %}
+        <section id="body" class="{{ class }}">
+            {% block content %}{% endblock %}
+        </section>
+        {% endblock %}
+
+
+</body>
+</html>

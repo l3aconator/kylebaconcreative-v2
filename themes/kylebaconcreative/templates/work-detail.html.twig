@@ -1,0 +1,102 @@
+{% embed 'partials/base.html.twig' %}
+
+{% set ph = page.header %}
+
+{% block content %}
+    <div class="main-content work-detail">
+        <section class="work-detail-header">
+            <div class="work-detail-img-box">
+                <img class="work-detail-full-img" src="{{ page.media[ph.heroimage].url }}" alt="{{ ph.heroimagealt }}" />
+                <div class="row clearfix container">
+                    <div class="col col-6of12 project">
+                        <h1 class="name">{{ page.title }}</h1>
+                        <p class="description">{{ page.content }}</p>
+                    </div>
+                    <div class="col col-6of12">
+
+                        {% if ph.circleteaserone == true %}
+                        <div class="close-up-circle large">
+                            <img src="{{ page.media[ph.circleteaseroneimage].url }}" alt="{{ ph.circleteaseronealt }}" />
+                        </div>
+                        {% endif %}
+
+                        {% if ph.circleteasertwo == true %}
+                        <div class="close-up-circle medium">
+                            <img src="{{ page.media[ph.circleteasertwoimage].url }}" alt="{{ ph.circleteasertwoalt }}" />
+                        </div>
+                         {% endif %}
+
+                        <div class="down-circle">
+                            <a href="#down">
+                                <img src="{{ url('theme://images/down-arrow.svg') }}" alt="An arrow to go down to images of the projects." />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="down">
+
+            {%if ph.middle == true %}
+                <div class="work-detail-img-box">
+                    <img class="work-detail-full-img" src="{{ page.media[ph.middleimage].url }}" alt="{{ ph.middlealt }}" />
+                </div>
+            {% endif %}
+
+            {% if ph.singlecolumn == true %}
+
+                {% for assets in ph.singlecolumncontent.assets %}
+                    <div class="container {{ assets.class }}">
+                        <img src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
+                    </div>
+                {% endfor %}
+
+            {% endif %}
+
+            {% if ph.infographic == true %}
+                <div class="infographic-container">
+                    <a href="{{ page.media[ph.infographicimage].url }}" target="_blank">
+                        <img class="infographic" src="{{ page.media[ph.infographicimage].url }}" alt="{{ ph.infographicimagealt }}" />
+                    </a>
+                </div>
+            {% endif %}
+
+        </section>
+
+        {%if ph.squaretall == true %}
+        <section class="work-detail-middle container">
+            <div class="row clearfix">
+                <div class="col col-6of12">
+                    <div class="work-detail-secondary-img">
+                        <img class src="{{ page.media[ph.squareimage].url }}" alt="{{ ph.squarealt }}" />
+                    </div>
+                    <p>{{ ph.squareimagecaption }}</p>
+                </div>
+                <div class="col col-6of12">
+                    <div class ="work-detail-tall-img">
+                        <img src="{{ page.media[ph.tallimage].url }}" alt="{{ ph.tallalt }}" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+
+        {%if ph.footer == true %}
+        <section>
+            <div class="work-detail-img-box">
+                <img class="work-detail-full-img" src="{{ page.media[ph.footerimage].url }}" alt="{{ ph.footeralt }}" />
+            </div>
+        </section>
+        {% endif %}
+
+        {% embed 'partials/footer-carousel.html.twig' %}
+        {% endembed %}
+
+        {% embed 'partials/cta-bar.html.twig' %}
+        {% endembed %}
+
+    </div>
+{% endblock %}
+
+{% endembed %}

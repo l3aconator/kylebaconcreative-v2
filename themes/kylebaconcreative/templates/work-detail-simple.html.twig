@@ -1,0 +1,80 @@
+{% embed 'partials/base.html.twig' %}
+
+{% set ph = page.header %}
+
+{% block content %}
+    <div class="main-content work-detail">
+        <section class="work-detail-header">
+            <div class="work-detail-img-box">
+                <img class="work-detail-full-img" src="{{ page.media[ph.heroimage].url }}" alt="{{ ph.heroimagealt }}" />
+                <div class="container">
+                    <div class="project">
+                        <h1 class="name">{{ page.title }}</h1>
+                        <p class="description">{{ page.content }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="down">
+            
+            {% if ph.singlecolumnfull == true %}
+            
+                {% for assets in ph.singlecolumnfullcontent.assets %}
+                    <img class="{{ assets.class }}" src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
+                {% endfor %}
+            
+            {% endif %}
+            
+            {% if ph.singlecolumn == true %}
+            
+                {% for assets in ph.singlecolumncontent.assets %}
+                <div class="container {{ assets.class }} {{ assets.customclassone }}">
+                    <img src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
+                </div>
+                {% endfor %}
+            
+            {% endif %}
+            
+            {% if ph.twocolumn == true %}
+            
+                <div class="row clearfix container marg-bot">
+                    {% for assets in ph.twocolumncontent.assets %}
+                        <div class="col col-6of12 church-icon-set-container {{ assets.class }}">
+                            <img src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
+                            {{ assets.customlink }}
+                        </div>
+                    {% endfor %}
+                </div>
+            
+            {% endif %}
+            
+        </section>
+        
+        {% if ph.footer == true %}
+        <section>
+            <div class="work-detail-img-box">
+                <img class="work-detail-full-img" src="{{ page.media[ph.footerimage].url }}" alt="{{ ph.footeralt }}" />
+            </div>
+        </section>
+        {% endif %}
+        
+        {% if ph.customquotefooter == true %}
+            {% embed 'partials/custom-footer-quote.html.twig' %}
+            {% endembed %}
+        {% endif %}
+        
+        {% if ph.customcountfooter == true %}
+            {% embed 'partials/custom-footer-count.html.twig' %}
+            {% endembed %}
+        {% endif %}
+
+        {% embed 'partials/footer-carousel.html.twig' %}
+        {% endembed %}
+
+        {% embed 'partials/cta-bar.html.twig' %}
+        {% endembed %}
+        
+    </div>
+{% endblock %}
+
+{% endembed %}

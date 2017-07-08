@@ -1,0 +1,67 @@
+{% set ph = page.header %}
+
+<section class="work-carousel align-center">
+    <div class="row clearfix container">
+        <div class="col col-6of12">
+            <div class="col col-3of12">
+                 {% if not page.isLast %}
+                
+                    <a href="{{ page.prevSibling.url }}">
+                        <div class="arrow-container">
+                            <div class="icon-box mobile-left">
+
+                                    <img src="{{ page.prevSibling.media['homepage-preview.jpg'].url }}" alt="A preview image of the previous work sample of Kyle Bacon." />
+
+
+                            </div>
+                            <div class="arrow left">
+                                <img src="{{ url('theme://images/next-arrow.svg') }}" alt="An arrow to go to the next project." />
+                            </div>
+                        </div>
+                    </a>
+                
+                {% endif %}
+            </div>
+            <div class="col col-9of12 left-name">
+                
+                {% if not page.isLast %}
+                    <div class="work-carousel-name">Previous project</div>
+                    <a href="{{ page.prevSibling.url }}">
+                        <div class="work-carousel-project">{{ page.prevSibling.title }}</div>
+                    </a>
+                {% endif %}
+                
+            </div>
+        </div>
+        <div class="col col-6of12">
+            <div class="col col-9of12 right-name">
+                
+                 {% if not page.isFirst %}
+                    <div class="work-carousel-name">Next project</div>
+                    <a href="{{ page.nextSibling.url }}">
+                        <div class="work-carousel-project">{{ page.nextSibling.title }}</div>
+                    </a>
+                {% endif %}
+                
+            </div>
+            <div class="col col-3of12">
+                
+                {% if not page.isFirst %}
+                    <a href="{{ page.nextSibling.url }}">
+                        <div class="arrow-container">
+                            <div class="icon-box">
+                                
+                                    <img src="{{ page.nextSibling.media['homepage-preview.jpg'].url }}" alt="A preview image of the next work sample of Kyle Bacon." />
+
+                            </div>
+                            <div class="arrow right">
+                                <img src="{{ url('theme://images/prev-arrow.svg') }}" alt="An arrow to go to the next project." />
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+</section>

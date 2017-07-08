@@ -1,0 +1,69 @@
+{% set ph = page.header %}
+
+{% if show_prev_next %}    
+<section class="work-carousel align-center main-content">
+    <div class="row clearfix container">
+        <div class="col col-6of12">
+            <div class="col col-3of12">
+                 {% if not page.isLast %}
+                
+                    <a href="{{ page.prevSibling.url }}">
+                        <div class="arrow-container">
+                            <div class="icon-box mobile-left">
+
+                                    <img src="{{ page.prevSibling.media['journal-circle.jpg'].url }}" alt="Previous blog post preview circle image." />
+
+
+                            </div>
+                            <div class="arrow left">
+                                <img src="{{ url('theme://images/next-arrow.svg') }}" alt="An arrow to go to the next post." />
+                            </div>
+                        </div>
+                    </a>
+                
+                {% endif %}
+            </div>
+            <div class="col col-9of12 left-name">
+                
+                {% if not page.isLast %}
+                    <div class="work-carousel-name">Previous post</div>
+                    <a href="{{ page.prevSibling.url }}">
+                        <div class="work-carousel-project">{{ page.prevSibling.title }}</div>
+                    </a>
+                {% endif %}
+                
+            </div>
+        </div>
+        <div class="col col-6of12">
+            <div class="col col-9of12 right-name">
+                
+                 {% if not page.isFirst %}
+                    <div class="work-carousel-name">Next post</div>
+                    <a href="{{ page.nextSibling.url }}">
+                        <div class="work-carousel-project">{{ page.nextSibling.title }}</div>
+                    </a>
+                {% endif %}
+                
+            </div>
+            <div class="col col-3of12">
+                
+                {% if not page.isFirst %}
+                    <a href="{{ page.nextSibling.url }}">
+                        <div class="arrow-container">
+                            <div class="icon-box">
+                                
+                                    <img src="{{ page.nextSibling.media['journal-circle.jpg'].url }}" alt="Next blog post preview circle image." />
+
+                            </div>
+                            <div class="arrow right">
+                                <img src="{{ url('theme://images/prev-arrow.svg') }}" alt="An arrow to go to the next post." />
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

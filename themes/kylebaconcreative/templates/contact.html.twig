@@ -1,0 +1,51 @@
+{% embed 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="main-content contact container">
+    <fieldset class="contact-form">
+        <form action="https://formspree.io/hello@kylebaconcreative.com" method="post">
+            <div class="form-row">
+                <div class="row clearfix">
+                    <div class="col col-6of12">
+                        <div class="form-text">Hey Bacon, my name is</div>
+                    </div>
+                    <div class="col col-6of12">
+                        <input id="name" type="text" name="name" placeholder="Darth Vader" value="" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="row clearfix">
+                    <div class="col col-3of12">
+                        <div class="form-text">My email is</div>
+                        </div>
+                    <div class="col col-9of12">
+                        <input id="email-address" type="email" name="email" placeholder="luke@iamyourfather.com" value="" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="row clearfix">
+                    <div class="col col-7of12">
+                        <div class="form-text">I am contacting you about</div>
+                    </div>
+                    <div class="col col-5of12">
+                        <select name="contact-reason">
+                            <option value="select">--</option>
+                            <option value="new-project">a new project</option>
+                            <option value="portfolio">a piece of your work</option>
+                            <option value="screw-up">a comment I have</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <textarea name="message" draggable="false" placeholder="Transmission here…"></textarea>
+            <input type="hidden" name="_next" value="/contact/thanks" />
+            <input class="form-button" type="submit" />
+        </form>
+    </fieldset>
+</div>
+{% endblock %}
+
+{% endembed %}

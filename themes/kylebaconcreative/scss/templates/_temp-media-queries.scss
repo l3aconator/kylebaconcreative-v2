@@ -1,0 +1,599 @@
+/*Desktop Work Detail Circle Fix*/
+
+@media (max-width: 1325px) {
+    #print .skill-description {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    #print .sub-head {
+        margin-left: 20%;
+    }
+
+    #web .skill-description {
+        margin-right: 25%;
+        margin-left: 10%;
+    }
+
+    #web .sub-head {
+        margin-left: 10%;
+    }
+
+    #illustration .skill-description {
+        margin-right: 25%;
+    }
+
+    #branding .skill-description {
+        margin-right: 35%;
+    }
+
+    #marketing .skill-description {
+        margin-right: 45%;
+    }
+}
+
+@media (max-width: 1249px) {
+    .close-up-circle.large {
+        top: 11%;
+        margin-right: 30%;
+    }
+
+    .col-4of12 {
+        width: 50%;
+    }
+
+    .journal-hero-circle.large {
+        width: 300px;
+        height: 300px;
+        top: 20%;
+        right: 4%;
+    }
+
+    .journal-item blockquote {
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 1110px) {
+     #print .skill-description {
+        margin-right: 10%;
+        margin-left: 25%;
+    }
+
+    #print .sub-head {
+        margin-left: 25%;
+    }
+
+    #web .skill-description {
+        margin-right: 5%;
+        margin-left: 25%;
+    }
+
+
+    #web .sub-head {
+        margin-left: 25%;
+    }
+
+    #illustration .skill-description {
+        margin-right: 5%;
+        margin-left: 20%;
+    }
+
+    #illustration .sub-head {
+        margin-left: 20%;
+    }
+
+    #branding .skill-description {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    #branding .sub-head {
+        margin-left: 15%;
+    }
+
+    #marketing .skill-description {
+        margin-right: 35%;
+        margin-left: 10%;
+    }
+
+    #marketing .sub-head {
+        margin-left: 10%;
+    }
+
+    .journal-hero-circle.large {
+        display: none;
+    }
+}
+
+/*Tablet*/
+
+@media (max-width: 951px) {
+
+    /*---GRID---*/
+
+    .col {
+        float: none;
+        width: 100%;
+    }
+
+    .mobile-col {
+        float: left;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 750px;
+        margin: 0px auto;
+    }
+
+    /*---GLOBAL---*/
+
+    .main-content {
+        margin-left: 179px;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    /*Global Navigation*/
+
+    .nav-container {
+        position: fixed;
+        width: 179px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+
+    /*Widgets*/
+
+    .filter-list-item {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+        -webkit-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .work-cell:focus .work-content-box,
+    .work-cell:active .work-content-box{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .83);
+    -webkit-box-shadow: 0px 4px 26px 4px rgba(0,0,0,0.60);
+            box-shadow: 0px 4px 26px 4px rgba(0,0,0,0.60);
+    display: block;
+}
+
+
+     /*Work Detail*/
+
+    .project .name,
+    .project p,
+    .work-detail-middle p {
+        padding: 0px 30px;
+    }
+
+    .project .name {
+        margin: 30px 0px 30px 0px;
+    }
+
+    .project p {
+        margin: 0px 0px 030px 0px;
+    }
+
+    .work-detail-middle {
+        padding: 30px 0px;
+        width: 100%;
+    }
+
+    .work-detail-secondary-img {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .work-detail-tall-img {
+        padding: 0;
+    }
+
+    .close-up-circle.large {
+        position: static;
+        width: 40%;
+        height: auto;
+        margin: 0 0 0 15%;
+    }
+
+    .close-up-circle.medium {
+        margin-top: 9%;
+    }
+
+    .down-circle {
+        margin-bottom: 30px;
+    }
+
+    .down-circle.no-detail {
+        margin-bottom: 30px;
+    }
+
+    .work-carousel-project {
+        margin-right: 0px
+    }
+
+    .mobile-left.icon-box {
+        margin-bottom: 30px;
+    }
+
+    .work-carousel-project {
+        margin-bottom: 30px;
+    }
+
+    .arrow-container {
+        display: inline-block;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 25%;
+        top: 50%;
+        -webkit-transform: translatey(-50%);
+            -ms-transform: translatey(-50%);
+                transform: translatey(-50%);
+    }
+
+    .left.arrow {
+        left: -20px;
+        top: 40%
+    }
+
+    .arrow-container:hover .left.arrow{
+        left: -55px;
+    }
+
+    .right.arrow {
+        left: 75px;
+        top: 55%
+    }
+
+    .arrow-container:hover .right.arrow{
+        left: 105px;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .cta-bar {
+        text-align: center;
+        padding: 30px 60px;
+    }
+
+    .cta-text {
+        margin-bottom: 30px;
+    }
+
+    /*About page*/
+
+    .about {
+        padding-left: 90px;
+    }
+
+    .about-photo {
+        width: 300px;
+        height: 300px;
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .easter-egg {
+        display: none;
+    }
+
+    /* Journal page   */
+    .journal-content {
+        padding: 15px 30px 0px 30px;
+    }
+
+    .journal-main-heading {
+        padding-top: 12%;
+        word-wrap: break-word;
+    }
+
+    .journal-hero {
+        min-height: 366px;
+    }
+
+    .journal-bar {
+        padding: 60px 30px;
+        margin-top: 30px;
+    }
+
+    /*Contact page*/
+
+    .contact fieldset {
+        margin: 60px;
+    }
+
+}
+
+/*Phone*/
+
+@media (max-width: 479px) {
+
+    /*---GRID---*/
+
+    .col {
+        float: none;
+        width: 100%;
+    }
+
+    .mobile-pad-cont {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0px;
+    }
+
+    h1 {
+        font-size: 2.6em;
+    }
+
+    /*---GLOBAL---*/
+
+    .main-content {
+        margin: 0;
+        margin-top: 75px;
+    }
+
+    /*Global Navigation*/
+
+    .nav-container {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: black;
+        z-index: 1000;
+        /* nav-bg: */
+        -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.30);
+                box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.30);
+    }
+
+    .mobile-nav {
+        position: relative;
+    }
+
+    .overlay {
+        background-color: black;
+    }
+
+    .mobile-logo-svg {
+        margin: 20px 30px 20px 30px;
+    }
+
+    .menu-text {
+        position: absolute;
+        color: white;
+        top: 28px;
+        right: 70px;
+    }
+
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+        margin: 20px 30px;
+        position: relative;
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    /*Widgets*/
+
+    .mobile-filter-widget {
+        margin: 30px 30px 0px 15px;
+        color: white;
+    }
+
+    .mobile-filter-toggle {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #898989;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        display: block;
+    }
+
+    .mobile-filter-list-item {
+        margin-bottom: 30px;
+    }
+
+    .mobile-filter-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-filter-name {
+        display: inline;
+        padding: 30px;
+    }
+
+    .active-mobile {
+        background-color: white;
+        border: 2px solid white;
+        -webkit-box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
+                box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
+    }
+
+    .footer {
+        margin-bottom: 15px;
+    }
+
+    /*Work Gallery*/
+
+    .mobile-teaser {
+        display: block;
+    }
+
+    .desktop-teaser {
+        display: none;
+    }
+
+
+    /*ABOUT*/
+
+    .about,
+    .skills,
+    .process {
+        padding: 60px 30px;
+    }
+
+    .skill-box {
+        margin: 60px auto;
+        padding: 0;
+    }
+
+    .skill-description {
+        margin: 0;
+        padding: 0;
+    }
+
+    #print .skill-description,
+    #web .skill-description,
+    #illustration .skill-description,
+    #branding .skill-description,
+    #marketing .skill-description {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    #print .sub-head,
+    #web .sub-head,
+    #illustration .sub-head,
+    #branding .sub-head,
+    #marketing .sub-head {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    #print .icon-box,
+    #web .icon-box,
+    #illustration .icon-box,
+    #branding .icon-box,
+    #marketing .icon-box {
+        margin: 0px auto 30px auto;
+    }
+
+    .process-icon-box {
+        margin: 0px auto 30px auto;
+    }
+
+    .process .row {
+        margin: 0;
+        padding-bottom: 60px;
+    }
+
+    /*  Journal page  */
+    .journal-hero {
+        min-height: 275px;
+    }
+
+    .journal-information.main-content {
+        margin-top: 0px;
+    }
+
+    .journal-main-heading {
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+
+    .journal-item img {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .journal-item img.full {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .journal-item img.half {
+        width: 100%;
+    }
+
+    .journal-item img.half:first-child {
+        margin-left: 0px;
+    }
+
+    .journal-item img.half:last-child {
+        margin-right: 0px;
+    }
+
+    .journal-item img.thirds {
+        width: 100%;
+    }
+
+    .journal-item img.thirds:first-child {
+        margin-left: 0px;
+    }
+
+    .journal-item img.thirds:last-child {
+        margin-right: 0px;
+    }
+
+    .journal-item img.float-left {
+        float: none;
+    }
+
+    /*Contact page*/
+
+    .contact-list,
+    h6 .contact-list  {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .contact-list-item {
+        text-align: left;
+    }
+
+    .contact fieldset {
+        margin: 0px;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .contact .col {
+        width: 100%;
+        float: none;
+
+    }
+
+    .contact-form input {
+        font-size: 1.75em;
+    }
+
+    .contact select {
+        font-size: 1.75em;
+    }
+
+    .form-text {
+      font-size: 1.75em;
+    }
+}

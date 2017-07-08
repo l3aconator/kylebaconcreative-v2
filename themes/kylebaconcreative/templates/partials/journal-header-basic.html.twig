@@ -1,0 +1,38 @@
+<div class="journal-header">
+    <section class="journal-hero main-content" style="background-image: url({{ page.media[ph.journalhero].url }})">
+        <div class="row clearfix">
+            <div class="col col-7of12">
+                {% if page.header.link %}
+                    <h1 class="journal-main-heading">
+                        {% if page.header.continue_link is not sameas(false) %}
+                        <a href="{{ page.url }}"></a>
+                        {% endif %}
+                        <a href="{{ page.header.link }}">{{ page.title }}</a>
+                    </h1>
+                {% else %}
+                    <h1 class="journal-main-heading"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+                {% endif %}
+            </div>
+            <div class="col col-6of12">
+                <div class="journal-hero-circle large">
+                    <img src="{{ page.media[ph.journalherocircle].url }}" alt="{{ ph.journalherocirclealt }}" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="journal-information main-content">
+        <span class="list-blog-date">
+            <span>Posted on 
+                <span>{{ page.date|date("M d, Y") }}</span> 
+                {% if page.taxonomy.tag %}
+                    <span>in</span> 
+                    <span class="journal-tags">
+                        {% for tag in page.taxonomy.tag %}
+                        <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </span>
+        </span>
+    </section>
+</div>

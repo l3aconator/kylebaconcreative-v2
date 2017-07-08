@@ -1,0 +1,17 @@
+{% macro loop(page) %}
+    {% for p in page.children.visible %}
+        {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+        <li class="nav-list-item {{ current_page }}">
+            <a href="{{ p.url }}">{{ p.menu }}</a>
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+<ul class="nav-list js-nav-list hidden">
+        {% for page in pages.children.visible %}
+            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+            <li class="nav-list-item {{ current_page }}">
+                <a href="{{ page.url }}">{{ page.menu }}</a>
+            </li>
+        {% endfor %}
+</ul>

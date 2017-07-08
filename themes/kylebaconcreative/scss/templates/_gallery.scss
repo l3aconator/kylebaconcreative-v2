@@ -1,0 +1,55 @@
+/*Work Gallery*/
+.work-image-box {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.work-cell {
+    padding: 30px;
+    color: white;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+            transform: translatey(-50%);
+    width: 100%;
+}
+
+.work-content-box {
+    opacity: 0;
+    display: block;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    padding: 30px;
+    z-index: 2;
+    height: 100%;
+}
+
+.work-cell:hover .work-content-box {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .83);
+    box-shadow: 0px 4px 26px 4px rgba(0,0,0,0.60);
+    display: block;
+}
+
+.work-heading {
+    font-size: 1.1em;
+}
+
+.mobile-teaser {
+    display: none;
+}
+
+.work-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}

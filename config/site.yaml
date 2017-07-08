@@ -1,0 +1,24 @@
+title: 'The Portfolio of Web Designer/Developer and Graphic Designer Kyle Bacon'
+author:
+  name: 'Kyle Bacon'
+  email: hello@kylebaconcreative.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Kyle Bacon is a graphic designer and illustrator in the Portland area with experience in web and print design, branding, outdoor advertising, and more.'
+  keywords: 'design, graphic design, web design, web, frontend, development, UX, user experience, coding, HTML, CSS, javascript, print design, icon design, illustration'
+  'og:url': 'http://www.kylebaconcreative.com'
+  'og:title': 'The Portfolio of Web Designer/Developer and Graphic Designer Kyle Bacon'
+  'og:type': website
+  'twitter:title': 'The Portfolio of Web Designer/Developer and Graphic Designer Kyle Bacon'
+  'twitter:description': 'Kyle Bacon is a graphic designer and illustrator in the Portland area with experience in web and print design, branding, outdoor advertising, and more.'
+  'twitter:site': '@l3acon'
+  'twitter:card': 'Kyle Bacon is a graphic designer and illustrator in the Portland area with experience in web and print design, branding, outdoor advertising, and more.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

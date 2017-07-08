@@ -1,0 +1,8 @@
+<div class="col col-6of12">
+    <h4>Typography</h4>
+    {% for type in ph.typography %}
+    <div class="type-image-box">
+        <img class="type-image" src="{{ page.media[type.image].url }}" alt="{{ type.imagealt }}" />
+    </div>
+    {% endfor %}
+</div>

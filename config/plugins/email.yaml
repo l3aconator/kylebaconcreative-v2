@@ -1,0 +1,15 @@
+enabled: true
+from: hello@kylebaconcreative.com
+from_name: 'Kyle Bacon'
+to: hello@kylebaconcreative.com
+to_name: 'Kyle Bacon'
+mailer:
+  engine: mail
+  smtp:
+    server: localhost
+    port: 25
+    encryption: none
+  sendmail:
+    bin: /usr/sbin/sendmail
+content_type: text/html
+debug: false
