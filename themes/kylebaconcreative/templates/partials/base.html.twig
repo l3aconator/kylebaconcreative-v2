@@ -1,4 +1,5 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% set ph = page.header %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}" class="{{ page.header.body_classes }}">
 <head>
@@ -35,7 +36,7 @@
     <meta name="msapplication-square310x310logo" content="{{ url('theme://images/mstile-310x310.png') }}" />
 
     {% block stylesheets %}
-        {% do assets.addCss('theme://css-compiled/styles.css') %}
+        {% do assets.addCss('theme://css-compiled/styles.min.css') %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -51,7 +52,7 @@
         {% block header %}
         <header class="mobile">
             <nav class="mobile-nav">
-                <a href="/"><img class="mobile-logo-svg" src="{{  url('theme://images/secondary-logo.svg') }}" alt="Bacon Creative's logo"/></a>
+                <a href="/">{% include 'partials/logo/logo.html.twig' %}</a>
                 <div class="js-menu-activate">
                     <div class="menu-mobile js-menu-test">
                         <span class="menu-text">Menu</span>
@@ -62,58 +63,26 @@
                         </div>
                     </div>
                 </div>
-                    {% include 'partials/navigation.html.twig' %}
-                <div class="mobile-filter-widget js-mobile-filter-widget hidden">
-                    {% if page.header.homewidget == true %}
-                        {% include 'partials/mobile-filter-list.html.twig' %}
-                    {% elseif page.header.workdetailwidget == true %}
-                        {% include 'partials/work-detail-widget.html.twig' %}
-                    {% elseif page.header.socialwidget == true %}
-                        {% include 'partials/social-media-widget.html.twig' %}
-                    {% endif %}
-
-                    <footer class="footer js-footer hidden">
-                        <div class="footer-copyright">&copy;2015&#150;2016, KYLE BACON</div>
-                    </footer>
-                </div>
+                {% include 'partials/navigation.html.twig' %}
             </nav>
         </header>
         <div class="nav-container">
             <div class="docked-nav">
                 <header>
                     <nav class="main-nav">
-                        <a href="/"><img class="logo-svg" src="{{  url('theme://images/main-logo.svg') }}" alt="Bacon Creative's logo"/></a>
-                        <div class="js-menu-activate">
-                            <div class="menu-desktop">
-                                <span class="menu-text">Menu</span>
-                                <div class="menu-icon js-menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                            {% include 'partials/navigation.html.twig' %}
+                        <a class="logo-svg" href="/">{% include 'partials/logo/logo.html.twig' %}</a>
+                        {% include 'partials/navigation.html.twig' %}
                         <footer class="footer js-footer hidden">
                             <div class="footer-copyright">&copy;2015&#150;2016, KYLE BACON</div>
                         </footer>
                     </nav>
                 </header>
-
-                {% if page.header.homewidget == true %}
-                    {% include 'partials/desktop-filter-list.html.twig' %}
-                {% elseif page.header.workdetailwidget == true %}
-                    {% include 'partials/work-detail-widget.html.twig' %}
-                {% elseif page.header.socialwidget == true %}
-                    {% include 'partials/social-media-widget.html.twig' %}
-                {% endif %}
-
             </div>
         </div>
         {% endblock %}
 
         {% block body %}
-        <section id="body" class="{{ class }}">
+        <section class="{{ class }}">
             {% block content %}{% endblock %}
         </section>
         {% endblock %}

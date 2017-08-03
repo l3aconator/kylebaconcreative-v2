@@ -12,15 +12,12 @@
 @import "framework/backgrounds";
 @import "framework/utilities";
 
-// Load Layout Modules
-@import "modules/widgets";
-
 // Load Layout Partials
 @import "layout-partials/navigation";
 
 // Load Page Templates
 @import "templates/base";
-@import "templates/gallery";
+@import "templates/work";
 @import "templates/work-detail";
 @import "templates/work-detail-website";
 @import "templates/contact";

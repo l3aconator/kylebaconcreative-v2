@@ -8,7 +8,4 @@ metadata:
     'twitter:card': ' Give Kyle Bacon a shout about your next web development/design project. Bacon specializes in web design and development and print/layout design.'
     'twitter:title': 'Contact Web Design/Development Freelancer Kyle Bacon'
     'twitter:description': ' Give Kyle Bacon a shout about your next web development/design project. Bacon specializes in web design and development and print/layout design.'
-body_classes: dark-bg
-socialwidget: true
 ---
-

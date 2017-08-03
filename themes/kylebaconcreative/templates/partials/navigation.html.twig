@@ -7,11 +7,11 @@
     {% endfor %}
 {% endmacro %}
 
-<ul class="nav-list js-nav-list hidden">
-        {% for page in pages.children.visible %}
-            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-            <li class="nav-list-item {{ current_page }}">
-                <a href="{{ page.url }}">{{ page.menu }}</a>
-            </li>
-        {% endfor %}
+<ul class="nav-list">
+    {% for page in pages.children.visible %}
+    {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+    <li class="nav-list-item">
+        <a class="{{ current_page }}" href="{{ page.url }}">{{ page.menu }}</a>
+    </li>
+    {% endfor %}
 </ul>

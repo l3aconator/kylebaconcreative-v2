@@ -1,35 +1,33 @@
 {% embed 'partials/base.html.twig' %}
 
-	{% set collection = page.collection() %}
+{% set collection = page.collection() %}
 
-	{% block content %}
-
-		<section class="main-content journal-feed">
-              {% for child in collection %}
-                <div class="journal-feed-item col col-4of12">
-                  
-                  <div class="journal-hero" style="background-image: url({{ child.media[child.header.journalhero].url }})">
-                    <h4 class="journal-main-heading"><a href="{{ child.url }}">{{ child.title }}</a></h4>
-                  </div>
-                  
-                  <section class="journal-information">
-                    <span class="list-blog-date">
-                      <span>Posted on 
-                        <span>{{ child.date|date("M d, Y") }}</span>
-                      </span>
-                    </span>
-                  </section>
-                  
-                  
-                <div class="journal-feed-content">
-                  <p>{{ child.summary }}<a href="{{ child.url }}" class="button-link"><button class="u-center dark-btn" type="button">Read more…</button></a></p>
+{% block content %}
+<section class="main-content journal-feed">
+    <div class="container">
+        <div class="grid flex-grid--gutters">
+            {% for child in collection %}
+            <div class="col col-width__four">
+                <div class="journal-feed-item">
+                    <div class="journal-hero" style="background-image: url({{ child.media[child.header.journalhero].url }})">
+                        <h4 class="journal-main-heading"><a href="{{ child.url }}">{{ child.title }}</a></h4>
+                    </div>
+                    <section class="journal-information">
+                        <span class="list-blog-date">
+                            <span>Posted on
+                                <span>{{ child.date|date("M d, Y") }}</span>
+                            </span>
+                        </span>
+                    </section>
+                    <div class="journal-feed-content">
+                        <p>{{ child.summary }}<a href="{{ child.url }}" class="button-link"><button class="u-center dark-btn" type="button">Read more…</button></a></p>
+                    </div>
                 </div>
-                  
-                </div>
-              {% endfor %}
-		</section>
-	{% endblock %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
 
 {% endembed %}
-
-

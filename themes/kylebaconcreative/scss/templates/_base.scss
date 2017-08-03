@@ -1,3 +1,7 @@
+body {
+    background-color: $blue--dark;
+}
+
 .main-content {
-  margin-left: 250px;
+     margin-left: $docked-nav--width;
 }

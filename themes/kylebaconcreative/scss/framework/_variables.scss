@@ -1,5 +1,13 @@
 // Colors
 $dark-gray: #2C2C2C;
+$blue--base: #272B7E;
+$blue--light: #39ABF3;
+$blue--dark: #141640;
+$white: #FFFFFF;
+
+// Navigation
+$docked-nav--width: 10%;
+$container: 80%;
 
 // Padding
 $padding-base: 60px;
@@ -9,22 +17,28 @@ $padding-base-by-4: 15px;
 // Margin
 $margin-base: $padding-base;
 
-// Font Stack
+// ---- Font Stack ----
 $sans-serif-base: 'qanelas_softmedium', sans-serif;
+$sans-serif-semi-bold: 'qanelas_softsemibold', sans-serif;
 $serif-base: 'museo-slab', serif;
 
-//Font Size
+// ---- Font Size ----
 $body-size: 16px;
 $h1: 3.2em;
 $h2: 2.5em;
 $h3: 1.5em;
 $h4: 1.25em;
-$h5: 1.25em;
+$h5: 1.15em;
 $h6: 0.9333em;
 
-// Transitions
+// ---- Transitions ----
 $base-transition: 200ms ease-in;
 
-//Grid
+// ---- Grid ----
+$container: 80%;
+$grid--gutter: 30px;
 
-//Breakpoints
+// ---- Breakpoints ----
+$breakpoint--mobile: 480px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 480px;

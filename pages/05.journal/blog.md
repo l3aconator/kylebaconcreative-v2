@@ -1,7 +1,6 @@
 ---
 title: Journal
 published: true
-body_classes: dark-bg
 content:
     items:
         - '@self.children'
@@ -21,4 +20,3 @@ metadata:
     'twitter:title': 'Journal of Web Design/Development Freelancer Kyle Bacon'
     'twitter:description': 'The journal, thoughts, musings, and rants from Web Developer and Designer Kyle Bacon.'
 ---
-

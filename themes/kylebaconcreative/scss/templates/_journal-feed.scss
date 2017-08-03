@@ -1,49 +1,49 @@
 .journal-feed {
-  
-  .journal-feed-item {
-    transition: $base-transition;
-    height: 710px;
-    background-color: white;
-    
-    &:hover,
-    &:active,
-    &:focus {
-      box-shadow: 0px 4px 26px 4px rgba(0,0,0,0.30);
+
+    .journal-feed-item {
+        transition: $base-transition;
+        height: 710px;
+        background-color: white;
+
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: 0px 4px 26px 4px rgba(0,0,0,0.30);
+        }
+
+        img {
+            display: none;
+        }
     }
-    
-    img {
-      display: none;
+
+    .journal-hero {
+        background-color: $dark-gray;
+        min-height: 266px;
+
+        .journal-main-heading {
+            padding-left: $padding-base;
+            padding-right: $padding-base;
+            font-size: 1.75em;
+            word-wrap: break-word;
+        }
     }
-  }
-  
-  .journal-hero {
-    background-color: $dark-gray;
-    min-height: 266px;
-    
-    .journal-main-heading {
-      padding-left: $padding-base;
-      padding-right: $padding-base;
-      font-size: 1.75em;
-      word-wrap: break-word;
+
+    .journal-feed-content {
+        padding-left: $padding-base;
+        padding-right: $padding-base;
+
+        button {
+            width: 100%;
+            margin-bottom: $margin-base;
+        }
     }
-  }
-  
-  .journal-feed-content {
-    padding-left: $padding-base;
-    padding-right: $padding-base;
-    
-    button {
-      width: 100%;
-      margin-bottom: $margin-base;
+
+    .journal-information {
+        padding-top: $padding-base-by-4;
+        padding-bottom: $padding-base-by-4;
+
+        .list-blog-date {
+            font-size: .875em;
+        }
     }
-  }
-  
-  .journal-information {
-    padding-top: $padding-base-by-4;
-    padding-bottom: $padding-base-by-4;
-    
-    .list-blog-date {
-      font-size: .875em;
-    }
-  }
 }

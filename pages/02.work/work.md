@@ -1,9 +1,6 @@
 ---
-title: work-detail
-published: true
-visible: false
+title: 'Work'
 content:
     items:
         - '@self.children'
 ---
-
