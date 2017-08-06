@@ -1,8 +1,35 @@
 // ---- Work Gallery ----
 
+.col--width__four,
+.col--width__eight {
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.col--width__four {
+
+    .work-image-box {
+
+        .work-meta {
+
+            .work-meta--content {
+                width: 30%;
+
+                &-title,
+                &-teaser {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 .work-image-box {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 400px;
     display: block;
     z-index: 1;
@@ -11,4 +38,92 @@
     transition: all 500ms ease;
     margin-bottom: $padding-base-by-2;
     border-radius: 30px;
+    border: 20px solid transparent;
+
+    &:hover {
+
+        .work-meta {
+
+            .work-meta--content {
+                width: 20px;
+                overflow: hidden;
+
+                &-title,
+                &-teaser {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    &.work--orange {
+        border-color: $orange;
+
+        .work-meta {
+
+            .work-meta--content {
+                background-color: $orange;
+            }
+        }
+    }
+
+    &.work--blue__light {
+        border-color: $blue--light;
+
+        .work-meta {
+
+            .work-meta--content {
+                background-color: $blue--light;
+            }
+        }
+    }
+
+    &.work--pink {
+        border-color: $pink;
+
+        .work-meta {
+
+            .work-meta--content {
+                background-color: $pink;
+            }
+        }
+    }
+
+    &.work--turq {
+        border-color: $turq;
+
+        .work-meta {
+
+            .work-meta--content {
+                background-color: $turq;
+            }
+        }
+    }
+
+    .work-meta {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 360px;
+
+        .work-meta--content {
+            height: 100%;
+            width: 50%;
+            padding: 0 3%;
+            transition: all 200ms ease-in-out;
+
+            &-title,
+            &-teaser {
+                color: $white;
+                transition: all 1ms ease;
+            }
+
+            &-title {
+                font-family: $sans-serif-semi-bold;
+                font-size: $h3;
+                line-height: 1.1em;
+                margin: 0;
+            }
+        }
+    }
 }
