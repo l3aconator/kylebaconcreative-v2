@@ -22,12 +22,16 @@
 }
 
 .container {
-  width: 80%;
-  margin: 0px auto;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-grid {
-	display: flex;
+    display: flex;
 
     > .col {
         flex: 1;
@@ -142,24 +146,24 @@
 
 @media (max-width: $breakpoint--tablet) {
 
-	.flex-grid,
+    .flex-grid,
     .flex-grid--gutters,
-	.flex-grid-thirds {
-		display: block;
+    .flex-grid-thirds {
+        display: block;
 
-		> .col {
+        > .col {
             display: block;
             flex-basis: (12/12) * 100%;
-			width: 100%;
-			margin: 0 0 10px 0;
-		}
-	}
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
 
-	.section-pad {
-		padding: 70px 0px;
-	}
+    .section-pad {
+        padding: 70px 0px;
+    }
 
     .mobile-show {
-    	display: inline;
+        display: inline;
     }
 }

@@ -1,101 +1,73 @@
 {% embed 'partials/base.html.twig' %}
 
-{% set ph = page.header %}
-
 {% block content %}
-	<div class="main-content sample">
-            <section class="about">
-                <div class="about-photo" style="background-image: url({{ page.media['bw-headshot.jpg'].url }})"></div>
-                <div class="easter-egg" style="background-image: url({{ page.media['easter-egg.svg'].url }})"></div>
-                <h1 class="main-heading white">About Bacon</h1>
-                <p class="bio">{{ ph.bio }}</p>
-            </section>
-            <section class="skills">
-                <h2 class="section-head white">Skills</h2>
-                <div class="row clearfix skill-box" id="print">
-                    <div class="col col-4of12">
-                        <div class="icon-box">
-                            <img class="skill-icon" src="{{ page.media[ph.skilloneicon].url }}" alt="Print icon." />
-                        </div>
-                    </div>
-                    <div class="col col-8of12">
-                            <h3 class="sub-head">{{ ph.skillonename }}</h3>
-                            <p class="skill-description">{{ ph.skillonedescription }}</p>
-                    </div>
-                </div>
-                <div class="row clearfix skill-box" id="web">
-                    <div class="col col-5of12">
-                        <div class="icon-box">
-                            <img class="skill-icon" src="{{ page.media[ph.skilltwoicon].url }}" alt="Web icon." />
-                        </div>
-                    </div>
-                    <div class="col col-7of12">
-                        <h3 class="sub-head">{{ ph.skilltwoname }}</h3>
-                        <p class="skill-description">{{ ph.skilltwodescription }}</p>
-                    </div>
-                </div>
-                <div class="skill-box" id="illustration">
-                    <div class="row clearfix">
-                        <div class="col col-6of12">
-                            <div class="icon-box">
-                                 <img class="skill-icon" src="{{ page.media[ph.skillthreeicon].url }}" alt="Illustration icon." />
-                            </div>
-                        </div>
-                        <div class="col col-6of12">
-                            <h3 class="sub-head">{{ ph.skillthreename }}</h3>
-                            <p class="skill-description">{{ ph.skillthreedescription }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-box" id="branding">
-                    <div class="row clearfix">
-                        <div class="col col-5of12">
-                            <div class="icon-box">
-                                 <img class="skill-icon" src="{{ page.media[ph.skillfouricon].url }}" alt="Branding icon." />
-                            </div>
-                        </div>
-                        <div class="col col-7of12">
-                            <h3 class="sub-head">{{ ph.skillfourname }}</h3>
-                            <p class="skill-description">{{ ph.skillfourdescription }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-box" id="marketing">
-                    <div class="row clearfix">
-                        <div class="col col-3of12">
-                            <div class="icon-box">
-                                 <img class="skill-icon" src="{{ page.media[ph.skillfiveicon].url }}" alt="Marketing icon." />
-                            </div>
-                        </div>
-                        <div class="col col-9of12">
-                            <h3 class="sub-head">{{ ph.skillfivename }}</h3>
-                            <p class="skill-description">{{ ph.skillfivedescription }}</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="process">
-                <h2 class="section-head">Process</h2>
-
-                {% for assets in ph.process.assets %}
-                <div class="row clearfix">
-                    <div class="col col-3of12">
-                        <div class="process-icon-box">
-                            <img id="{{assets.heading}}" src="{{ page.media[assets.icon].url }}" alt="Research icon." />
-                        </div>
-                    </div>
-                    <div class="col col-3of12">
-                        <h3 class="sub-head"> {{ assets.heading }} </h3>
-                    </div>
-                    <div class="col col-6of12">
-                        <p class="process-description">{{ assets.description }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-
-            </section>
-            {% include 'partials/contact-cta.html.twig' %}
-        </div>
+<div class="main-content sample">
+	<section class="about">
+		<div class="about-photo" style="background-image: url({{ page.media['bw-headshot.jpg'].url }})"></div>
+		<div class="easter-egg" style="background-image: url({{ page.media['easter-egg.svg'].url }})"></div>
+		<h1 class="main-heading white">About Bacon</h1>
+		<p class="bio">{{ ph.bio }}</p>
+	</section>
+	<section class="skills">
+		<h2 class="section-head white">Skills</h2>
+		<div class="grid flex-grid flex-wrap skill-box">
+			<div class="col col--width__four" id="print">
+				<div class="icon-box">
+					<img class="skill-icon" src="{{ page.media[ph.skilloneicon].url }}" alt="Print icon." />
+				</div>
+				<h3 class="sub-head">{{ ph.skillonename }}</h3>
+				<p class="skill-description">{{ ph.skillonedescription }}</p>
+			</div>
+			<div class="col col--width__four" id="web">
+				<div class="icon-box">
+					<img class="skill-icon" src="{{ page.media[ph.skilltwoicon].url }}" alt="Web icon." />
+				</div>
+				<h3 class="sub-head">{{ ph.skilltwoname }}</h3>
+				<p class="skill-description">{{ ph.skilltwodescription }}</p>
+			</div>
+			<div class="col col--width__four" id="illustration">
+				<div class="icon-box">
+					<img class="skill-icon" src="{{ page.media[ph.skillthreeicon].url }}" alt="Illustration icon." />
+				</div>
+				<h3 class="sub-head">{{ ph.skillthreename }}</h3>
+				<p class="skill-description">{{ ph.skillthreedescription }}</p>
+			</div>
+			<div class="col col--width__four" id="branding">
+				<div class="icon-box">
+					<img class="skill-icon" src="{{ page.media[ph.skillfouricon].url }}" alt="Branding icon." />
+				</div>
+				<h3 class="sub-head">{{ ph.skillfourname }}</h3>
+				<p class="skill-description">{{ ph.skillfourdescription }}</p>
+			</div>
+			<div class="col col--width__four" id="marketing">
+				<div class="icon-box">
+					<img class="skill-icon" src="{{ page.media[ph.skillfiveicon].url }}" alt="Marketing icon." />
+				</div>
+				<h3 class="sub-head">{{ ph.skillfivename }}</h3>
+				<p class="skill-description">{{ ph.skillfivedescription }}</p>
+			</div>
+		</div>
+	</section>
+	<section class="process">
+		<h2 class="section-head">Process</h2>
+		{% for assets in ph.process.assets %}
+		<div class="row clearfix">
+			<div class="col col-3of12">
+				<div class="process-icon-box">
+					<img id="{{assets.heading}}" src="{{ page.media[assets.icon].url }}" alt="Research icon." />
+				</div>
+			</div>
+			<div class="col col-3of12">
+				<h3 class="sub-head"> {{ assets.heading }} </h3>
+			</div>
+			<div class="col col-6of12">
+				<p class="process-description">{{ assets.description }}</p>
+			</div>
+		</div>
+		{% endfor %}
+	</section>
+	{% include 'partials/contact-cta.html.twig' %}
+</div>
 {% endblock %}
 
 {% endembed %}

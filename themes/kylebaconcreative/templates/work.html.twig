@@ -5,15 +5,20 @@
 {% block content %}
 <section class="main-content work-gallery">
     <div class="container">
+        <div class="page-hero">
+            <h1>{{ page.title }}</h1>
+        </div>
+        <!-- {{ page.content }} -->
         <div class="grid flex-grid--gutters">
             {% for child in collection.order('header.order', 'desc') if child != page %}
             <div class="col col--width__{{ random(['four', 'eight']) }}">
-                <div class="work-image-box {{ child.header.datacategoryone }} {{ child.header.datacategorytwo }} {{ child.header.datacategorythree }} {{ child.header.datacategoryfour }}" style="background-image: url( {{ child.media[child.header.homepagepreview].url }} )"></div>
+                <div class="work-image-box {% if child.header.datacategoryone %}{{ child.header.datacategoryone }} {% endif %}{% if child.header.datacategorytwo %}{{ child.header.datacategorytwo }} {% endif %}{% if child.header.datacategorythree %}{{ child.header.datacategorythree }} {% endif %}{% if child.header.datacategoryfour %}{{ child.header.datacategoryfour }} {% endif %}" style="background-image: url( {{ child.media[child.header.homepagepreview].url }} )">
+
+                </div>
             </div>
             {% endfor %}
         </div>
     </div>
-
 </section>
 {% endblock %}
 
