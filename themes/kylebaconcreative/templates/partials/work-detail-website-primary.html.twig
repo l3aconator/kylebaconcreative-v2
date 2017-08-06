@@ -3,13 +3,13 @@
         <img class="work-detail-website-primary-hero" src="{{ page.media[ph.workdetailwebsiteprimaryhero].url }}" alt="{{ ph.workdetailwebsiteprimaryheroalt }}" />
     </div>
 
-    <div class="row clearfix">
-        <div class="col col-4of12">
+    <div class="grid flex-grid--gutters">
+        <div class="col col--width__four">
             <a href="{{ ph.workdetailwebsiteprimaryurl }}" target="_blank">
                 <img class="work-detail-website-primary-main-image" src="{{ page.media[ph.workdetailwebsiteprimarycontentmainimage].url }}" alt="{{ ph.workdetailwebsiteprimarycontentmainimagealt }}" />
-            <a/>
+            </a>
         </div>
-        <div class="col col-8of12 container content">
+        <div class="col col--width__eight container content">
             <h4>{{ph.workdetailwebsiteprimaryheading}}</h4>
             <p>{{ph.workdetailwebsiteprimarycontent}}</p>
             {% if ph.workdetailwebsiteprimarybutton %}

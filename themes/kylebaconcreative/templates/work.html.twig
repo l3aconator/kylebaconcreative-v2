@@ -5,6 +5,9 @@
 {% block content %}
 <section class="main-content work-gallery">
     <div class="container">
+        <div class="">
+            <h1>{{ page.title }}</h1>
+        </div>
         <div class="grid flex-grid--gutters">
             {% for child in collection.order('header.order', 'desc') if child != page %}
                 <div class="col col--width__{{ random(['four', 'eight']) }}">
@@ -14,6 +17,7 @@
                                 <div class="work-meta--content">
                                     <p class="work-meta--content-title">{{ child.title }}</p>
                                     <p class="work-meta--content-teaser">{{ child.header.homepageteaser }}</p>
+                                    <img class="work-meta--content-arrow" src="/user/themes/kylebaconcreative/images/prev-arrow.svg" alt="An arrow to go onto the work." />
                                 </div>
                             </div>
                         </div>

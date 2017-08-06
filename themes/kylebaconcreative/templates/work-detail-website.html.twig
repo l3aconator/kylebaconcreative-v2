@@ -5,12 +5,12 @@
         <section class="work-detail-header">
             <div class="work-detail-img-box">
                 <img class="work-detail-full-img" src="{{ page.media[ph.heroimage].url }}" alt="{{ ph.heroimagealt }}" />
-                <div class="row clearfix container">
-                    <div class="col col-6of12 project">
+                <div class="grid flex-grid--gutters container">
+                    <div class="col col--width__six project">
                         <h1 class="name">{{ page.title }}</h1>
                         <p class="description">{{ page.content }}</p>
                     </div>
-                    <div class="col col-6of12">
+                    <div class="col col--width__six">
 
                         {% if ph.circleteaserone == true %}
                         <div class="close-up-circle large">
@@ -43,7 +43,7 @@
         </section>
 
         <section class="work-detail-extras">
-            <div class="row clearfix container u-pad mobile-pad-cont">
+            <div class="grid flex-grid--gutters container u-pad mobile-pad-cont">
                 {% if ph.typography %}
                     {% embed 'partials/work-detail-typography.html.twig' %}
                     {% endembed %}

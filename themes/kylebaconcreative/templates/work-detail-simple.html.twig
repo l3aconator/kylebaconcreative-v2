@@ -35,9 +35,9 @@
 
             {% if ph.twocolumn == true %}
 
-                <div class="row clearfix container marg-bot">
+                <div class="grid flex-grid--gutters container marg-bot">
                     {% for assets in ph.twocolumncontent.assets %}
-                        <div class="col col-6of12 church-icon-set-container {{ assets.class }}">
+                        <div class="col col--width__six church-icon-set-container {{ assets.class }}">
                             <img src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
                             {{ assets.customlink }}
                         </div>

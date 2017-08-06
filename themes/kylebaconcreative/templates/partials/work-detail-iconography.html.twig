@@ -1,13 +1,13 @@
 <section class="work-detail-iconography dark-bg u-pad">
-    <div class="row container clearfix mobile-pad-cont">
-        <div class="col col-6of12">
+    <div class="grid flex-grid--gutters container clearfix mobile-pad-cont">
+        <div class="col col--width__six">
             <h4 class="text-white">{{ph.workdetailiconographyheading}}</h4>
             <p class="text-white">{{ph.workdetailiconographycontent}}</p>
             {% if ph.workdetailiconographybutton %}
                 <a class="button-link" href="{{ ph.workdetailiconographyurl }}"><button type="button">{{ ph.workdetailiconographybutton }}</button></a>
             {% endif %}
         </div>
-        <div class="col col-6of12">
+        <div class="col col--width__six">
             <ul class="icon-list">
                 {% for icons in ph.workdetailiconographyicons %}
                 <li class="icon-circle">

@@ -1,5 +1,5 @@
 <section class="work-detail-website-tertiary dark-bg u-pad">
-    <div class="row container clearfix mobile-pad-cont">
+    <div class="grid flex-grid--gutters mobile-pad-cont">
         <div class="content">
             <h4 class="text-white">{{ph.workdetailwebsitetertiaryheading}}</h4>
             <p class="text-white">{{ph.workdetailwebsitetertiarycontent}}</p>
@@ -7,9 +7,7 @@
                 <a class="button-link" href="{{ ph.workdetailwebsitetertiaryurl }}"><button type="button">{{ ph.workdetailwebsitetertiarybutton }}</button></a>
             {% endif %}
         </div>
-
-            <img class="work-detail-website-tertiary-main-image" src="{{ page.media[ph.workdetailwebsitetertiarycontentmainimage].url }}" alt="{{ ph.workdetailwebsitetertiarycontentmainimagealt }}" />
-
+        <img class="work-detail-website-tertiary-main-image" src="{{ page.media[ph.workdetailwebsitetertiarycontentmainimage].url }}" alt="{{ ph.workdetailwebsitetertiarycontentmainimagealt }}" />
         {% if ph.workdetailwebsitetertiarycontentbgimage %}
             <img class="work-detail-website-tertiary-bg-image" src="{{ page.media[ph.workdetailwebsitetertiarycontentbgimage].url }}" alt="{{ ph.workdetailwebsitetertiarycontentbgimagealt }}" />
         {% endif %}
