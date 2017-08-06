@@ -1,7 +1,9 @@
 // ---- Work Gallery ----
 
 .col--width__four,
-.col--width__eight {
+.col--width__eight,
+.col--width__twelve,
+.col--width__six {
 
     a {
         text-decoration: none;
@@ -41,6 +43,24 @@
     position: relative;
     border: 20px solid transparent;
     box-shadow: 0 5px 7px 0 #0A0B20;
+
+    &.work-image-box__homepage {
+        min-height: 200px;
+
+        .work-meta {
+            height: 200px;
+
+            .work-meta--content {
+                display: flex;
+                align-items: center;
+
+                &-title {
+                    font-family: $sans-serif-semi-bold;
+                    font-size: $h3 - .35;
+                }
+            }
+        }
+    }
 
     &:hover {
         box-shadow: none;

@@ -5,6 +5,9 @@
 {% block content %}
 <section class="main-content journal-feed">
     <div class="container">
+        <div class="page-hero">
+            <h1>{{ page.title }}</h1>
+        </div>
         <div class="grid flex-grid--gutters">
             {% for child in collection %}
             <div class="col col-width__four">

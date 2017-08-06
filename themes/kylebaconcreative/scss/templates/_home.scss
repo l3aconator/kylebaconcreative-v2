@@ -1,0 +1,56 @@
+.home {
+
+    .page-hero {
+        margin-bottom: 90px;
+        height: 65vh;
+        margin-top: 20vh;
+
+        h1 {
+            color: $turq;
+            margin-bottom: $padding-large;
+
+            span {
+                color: $blue--light;
+            }
+        }
+
+        h2 {
+            color: $turq;
+            line-height: 1.5em;
+        }
+    }
+
+    .page-list {
+        margin-bottom: 20vh;
+
+        h3 {
+            margin-bottom: $padding-base-by-2;
+        }
+
+        .home--list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: $padding-base-by-4;
+                color: $turq;
+                font-size: $h4;
+            }
+        }
+    }
+
+    .page-work,
+    .page-about {
+        margin-bottom: 20vh;
+
+        h4 {
+            margin-bottom: $padding-base-by-2;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: $padding-base-by-2;
+        }
+    }
+}

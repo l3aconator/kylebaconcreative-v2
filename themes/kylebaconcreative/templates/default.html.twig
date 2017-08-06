@@ -2,7 +2,7 @@
 
 {% block content %}
 	<div class="main-content">
-		<div class="container">
+		<div {% if page.header.container == 'false' %}class="container"{% endif %}>
 			{{ page.content }}
 		</div>
 	</div>

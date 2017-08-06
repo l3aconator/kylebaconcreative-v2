@@ -5,16 +5,10 @@
 {% block content %}
 <section class="main-content work-gallery">
     <div class="container">
-<<<<<<< HEAD
-        <div class="">
-            <h1>{{ page.title }}</h1>
-        </div>
-=======
         <div class="page-hero">
             <h1>{{ page.title }}</h1>
         </div>
         <!-- {{ page.content }} -->
->>>>>>> 23e459dd03eaf76c636c45f976105903bbdece5f
         <div class="grid flex-grid--gutters">
             {% for child in collection.order('header.order', 'desc') if child != page %}
                 <div class="col col--width__{{ random(['four', 'eight']) }}">

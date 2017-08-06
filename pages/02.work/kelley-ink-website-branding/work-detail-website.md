@@ -1,6 +1,9 @@
 ---
 title: 'Kelley, Ink Website and Branding'
 
+taxonomy:
+    tag: [featured]
+
 metadata:
     description: 'Web design, development, and branding for Kelley,Ink, a successful one-woman content writing and project managment business.'
     'og:title': 'Kelley, Ink Website and Branding'

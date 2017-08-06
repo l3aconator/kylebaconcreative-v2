@@ -310,12 +310,6 @@
         margin-top: 30px;
     }
 
-    /*Contact page*/
-
-    .contact fieldset {
-        margin: 60px;
-    }
-
 }
 
 /*Phone*/
@@ -559,41 +553,5 @@
 
     .journal-item img.float-left {
         float: none;
-    }
-
-    /*Contact page*/
-
-    .contact-list,
-    h6 .contact-list  {
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .contact-list-item {
-        text-align: left;
-    }
-
-    .contact fieldset {
-        margin: 0px;
-        padding: 30px;
-        width: 100%;
-    }
-
-    .contact .col {
-        width: 100%;
-        float: none;
-
-    }
-
-    .contact-form input {
-        font-size: 1.75em;
-    }
-
-    .contact select {
-        font-size: 1.75em;
-    }
-
-    .form-text {
-      font-size: 1.75em;
     }
 }
