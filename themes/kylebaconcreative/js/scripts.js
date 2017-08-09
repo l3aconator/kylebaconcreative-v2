@@ -3,16 +3,9 @@ $(document).on('ready', function(){
     //Menu
     $('.js-menu-activate').on('click', function(){
         $('.js-menu').toggleClass('open');
-        $('.js-nav-list').slideToggle('hidden');
-        $('.js-footer').toggleClass('fadeIn');
+        $('.nav-list').toggleClass('open');
     });
 
-    //Mobile Menu with filter widget
-    $('.js-menu-activate').on('click', function(){
-        $('.js-mobile-filter-widget').slideToggle('hidden');
-        $('.js-footer').toggleClass('hidden');
-    });
-    
     //Smooth Scroll
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
