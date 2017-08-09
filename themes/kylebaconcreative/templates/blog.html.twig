@@ -10,20 +10,16 @@
         </div>
         <div class="grid flex-grid--gutters">
             {% for child in collection %}
-            <div class="col col-width__four">
-                <div class="journal-feed-item">
+            <div class="col col--width__six">
+                <div class="journal-feed-item {{ random(['journal--orange', 'journal--blue__light', 'journal--pink', 'journal--turq']) }}">
                     <div class="journal-hero" style="background-image: url({{ child.media[child.header.journalhero].url }})">
                         <h4 class="journal-main-heading"><a href="{{ child.url }}">{{ child.title }}</a></h4>
                     </div>
                     <section class="journal-information">
-                        <span class="list-blog-date">
-                            <span>Posted on
-                                <span>{{ child.date|date("M d, Y") }}</span>
-                            </span>
-                        </span>
+                        <span class="list-blog-date"><span>Posted on <span>{{ child.date|date("M d, Y") }}</span></span></span>
                     </section>
                     <div class="journal-feed-content">
-                        <p>{{ child.summary }}<a href="{{ child.url }}" class="button-link"><button class="u-center dark-btn" type="button">Read more…</button></a></p>
+                        <p>{{ child.summary }}<a href="{{ child.url }}" class="button-link"><button class="u-center dark" type="button">Read more&hellip;</button></a></p>
                     </div>
                 </div>
             </div>

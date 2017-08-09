@@ -27,6 +27,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-admin
         path: user/plugins/admin
         branch: master
+    youtube:
+        url: https://github.com/getgrav/grav-plugin-youtube
+        path: user/plugins/youtube
+        branch: master
 links:
     problems:
         src: grav-plugin-problems
@@ -51,4 +55,8 @@ links:
     login:
         src: grav-plugin-login
         path: user/plugins/login
+        scm: github
+    youtube:
+        src: grav-plugin-youtube
+        path: user/plugins/youtube
         scm: github

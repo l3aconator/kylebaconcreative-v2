@@ -5,53 +5,46 @@
         <section class="work-detail-header">
             <div class="work-detail-img-box">
                 <img class="work-detail-full-img" src="{{ page.media[ph.heroimage].url }}" alt="{{ ph.heroimagealt }}" />
-                <div class="grid flex-grid--gutters container">
-                    <div class="col col--width__six project">
-                        <h1 class="name">{{ page.title }}</h1>
-                        <p class="description">{{ page.content }}</p>
-                    </div>
-                    <div class="col col--width__six">
-
-                        {% if ph.circleteaserone == true %}
-                        <div class="close-up-circle large">
-                            <img src="{{ page.media[ph.circleteaseroneimage].url }}" alt="{{ ph.circleteaseronealt }}" />
+                <div class="container">
+                    <div class="grid flex-grid--gutters">
+                        <div class="col col--width__six project">
+                            <h1 class="name">{{ page.title }}</h1>
+                            <p class="description">{{ page.content }}</p>
                         </div>
-                        {% endif %}
-
-                        {% if ph.circleteasertwo == true %}
-                        <div class="close-up-circle medium">
-                            <img src="{{ page.media[ph.circleteasertwoimage].url }}" alt="{{ ph.circleteasertwoalt }}" />
-                        </div>
-                         {% endif %}
-
-                        <div class="down-circle">
-                            <a href="#down">
-                                <img src="{{ url('theme://images/down-arrow.svg') }}" alt="An arrow to go down to images of the projects." />
-                            </a>
+                        <div class="col col--width__six">
+                            {% if ph.circleteaserone == true %}
+                            <div class="close-up-circle large">
+                                <img src="{{ page.media[ph.circleteaseroneimage].url }}" alt="{{ ph.circleteaseronealt }}" />
+                            </div>
+                            {% endif %}
+                            {% if ph.circleteasertwo == true %}
+                            <div class="close-up-circle medium">
+                                <img src="{{ page.media[ph.circleteasertwoimage].url }}" alt="{{ ph.circleteasertwoalt }}" />
+                            </div>
+                             {% endif %}
+                            <div class="down-circle">
+                                <a href="#down">
+                                    <img src="{{ url('theme://images/down-arrow.svg') }}" alt="An arrow to go down to images of the projects." />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="down">
-
             {%if ph.middle == true %}
                 <div class="work-detail-img-box">
                     <img class="work-detail-full-img" src="{{ page.media[ph.middleimage].url }}" alt="{{ ph.middlealt }}" />
                 </div>
             {% endif %}
-
             {% if ph.singlecolumn == true %}
-
                 {% for assets in ph.singlecolumncontent.assets %}
                     <div class="container {{ assets.class }}">
                         <img src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
                     </div>
                 {% endfor %}
-
             {% endif %}
-
             {% if ph.infographic == true %}
                 <div class="infographic-container">
                     <a href="{{ page.media[ph.infographicimage].url }}" target="_blank">
@@ -59,9 +52,7 @@
                     </a>
                 </div>
             {% endif %}
-
         </section>
-
         {%if ph.squaretall == true %}
         <section class="work-detail-middle container">
             <div class="grid flex-grid--gutters">
@@ -79,7 +70,6 @@
             </div>
         </section>
         {% endif %}
-
         {%if ph.footer == true %}
         <section>
             <div class="work-detail-img-box">
@@ -87,13 +77,8 @@
             </div>
         </section>
         {% endif %}
-
         {% embed 'partials/footer-carousel.html.twig' %}
         {% endembed %}
-
-        {% embed 'partials/cta-bar.html.twig' %}
-        {% endembed %}
-
     </div>
 {% endblock %}
 

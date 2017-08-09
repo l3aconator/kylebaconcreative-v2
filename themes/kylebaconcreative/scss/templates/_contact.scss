@@ -1,6 +1,7 @@
 // ---- Contact page ----
 
 .contact {
+    margin-bottom: 90px;
 
     fieldset {
         border: none;
@@ -156,4 +157,8 @@ input {
           font-size: 1.75em;
         }
     }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: lighten($blue--dark, 20%);
 }

@@ -1,4 +1,4 @@
-/*About page*/
+// ---- About page ----
 
 .sample {
     position: relative;
@@ -14,7 +14,7 @@
     padding-top: 120px;
     padding-left: 350px;
     padding-bottom: 120px;
-    color: white;
+    color: $white;
     background-color: black;
 }
 
@@ -26,40 +26,34 @@
     margin: 90px 0px;
 }
 
-.process .section-head {
-    padding-top: 90px;
+.process {
+
+    .section-head {
+        padding-top: 90px;
+    }
 }
 
 .about-photo {
     background: white;
-    -webkit-box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
-            box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
+    box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
     width: 400px;
     height: 400px;
-    -webkit-border-radius: 1000px;
-            border-radius: 1000px;
+    border-radius: 1000px;
     position: absolute;
     top: 40px;
     left: -100px;
     background-position: center;
     background-size: cover;
     opacity: 1;
-    -webkit-transition: opacity 800ms ease;
     transition: opacity 800ms ease;
-}
-
-.easter-egg:hover .about-photo {
-    opacity: 0;
 }
 
 .easter-egg {
     background: white;
-    -webkit-box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
-            box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
+    box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
     width: 400px;
     height: 400px;
-    -webkit-border-radius: 1000px;
-            border-radius: 1000px;
+    border-radius: 1000px;
     position: absolute;
     top: 40px;
     left: -100px;
@@ -67,12 +61,15 @@
     background-size: 50%;
     background-repeat: no-repeat;
     opacity: 0;
-    -webkit-transition: opacity 800ms ease;
     transition: opacity 800ms ease;
-}
 
-.easter-egg:hover {
-    opacity: 1;
+    &:hover {
+        opacity: 1;
+
+        .about-photo {
+            opacity: 0;
+        }
+    }
 }
 
 .skills {
@@ -87,103 +84,140 @@
 
 .icon-box {
     background: white;
-    -webkit-box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
-            box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
-    -webkit-border-radius: 1000px;
-            border-radius: 1000px;
+    box-shadow: 0px 4px 26px 4px rgba(255,255,255,0.60);
+    border-radius: 1000px;
     position: relative;
 }
 
-#print .icon-box {
-    width: 250px;
-    height: 250px;
-    margin-left: 10%;
+#print {
+
+    .icon-box {
+        width: 250px;
+        height: 250px;
+        margin-left: 10%;
+    }
 }
 
-#web .icon-box {
-    width: 225px;
-    height: 225px;
-    margin-left: 30%;
+#web {
+
+    .icon-box {
+        width: 225px;
+        height: 225px;
+        margin-left: 30%;
+    }
 }
 
-#illustration .icon-box {
-    width: 200px;
-    height: 200px;
-    margin-left: 40%;
+#illustration {
+
+    .icon-box {
+        width: 200px;
+        height: 200px;
+        margin-left: 40%;
+    }
 }
 
-#branding .icon-box {
-    width: 200px;
-    height: 200px;
-    margin-left: 30%;
+#branding {
+
+    .icon-box {
+        width: 200px;
+        height: 200px;
+        margin-left: 30%;
+    }
 }
 
-#marketing .icon-box {
-    width: 175px;
-    height: 175px;
-    margin-left: 20%
+#marketing {
+
+    .icon-box {
+        width: 175px;
+        height: 175px;
+        margin-left: 20%
+    }
 }
 
-#marketing .icon-box {
-    width: 150px;
-    height: 150px;
-    margin-left: 10%;
+#marketing {
+
+    .icon-box {
+        width: 150px;
+        height: 150px;
+        margin-left: 10%;
+    }
+}
+
+#print {
+
+    .skill-icon {
+        left: 20%;
+    }
 }
 
 .skill-icon {
     position: absolute;
     top: 50%;
-    -webkit-transform: translatey(-50%);
-        -ms-transform: translatey(-50%);
-            transform: translatey(-50%);
+    transform: translatey(-50%);
 }
 
+#web,
+#illustration,
+#branding,
+#marketing {
 
-#print .skill-icon {
-    left: 20%;
-}
-
-#web .skill-icon,
-#illustration .skill-icon,
-#branding .skill-icon,
-#marketing .skill-icon {
-    left: 27%;
+    .skill-icon {
+        left: 27%;
+    }
 }
 
 .sub-head {
     margin-top: 5%;
 }
 
-#project .sub-head {
-    margin-top: 2%;
+#project {
+
+    .sub-head {
+        margin-top: 2%;
+    }
 }
 
-#print .skill-description {
-    margin-right: 50%;
+#print {
+
+    .skill-description {
+        margin-right: 50%;
+    }
 }
 
-#web .skill-description {
-    margin-right: 45%;
+#web {
+
+    .skill-description {
+        margin-right: 45%;
+    }
 }
 
-#illustration .skill-description {
-    margin-right: 35%;
+#illustration {
+
+    .skill-description {
+        margin-right: 35%;
+    }
 }
 
-#branding .skill-description {
-    margin-right: 45%;
+#branding {
+
+    .skill-description {
+        margin-right: 45%;
+    }
 }
 
-#marketing .skill-description {
-    margin-right: 55%;
+#marketing {
+
+    .skill-description {
+        margin-right: 55%;
+    }
 }
 
 .process {
     background-color: white;
-}
 
-.process .row {
-    padding-bottom: 120px;
+    .row {
+        padding-bottom: 120px;
+    }
 }
 
 .process-icon-box {
@@ -193,31 +227,22 @@
     height: 150px;
     border-radius: 1000px;
     position: relative;
+
+    img {
+        padding: 0;
+        margin: 0px auto;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translatey(-50%);
+        transform: translatex(-50%);
+        text-align: center;
+    }
 }
 
-.process-icon-box img {
-    padding: 0;
-    margin: 0px auto;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translatey(-50%);
-    transform: translatex(-50%);
-    text-align: center;
-}
-
-#Researchin’ {
-    width: 50%;
-}
-
-#Conceptin’ {
-    height: 50%;
-}
-
-#Creatin’ {
-    height: 50%;
-}
-
+#Researchin’,
+#Conceptin’,
+#Creatin’,
 #Launchin’ {
-    height: 50%;
+    width: 50%;
 }
