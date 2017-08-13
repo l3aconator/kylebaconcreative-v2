@@ -33,8 +33,11 @@
 }
 
 .journal-main-heading {
+    font-size: 60px;
     padding-left: 120px;
     padding-top: 20%;
+    margin-bottom: 90px;
+    max-width: 750px;
     transition: all 400ms ease;
     text-shadow: 0px 4px 7px rgba(0,0,0,0.50);
 
@@ -80,8 +83,9 @@
         margin-right: -15px;
         padding-left: 15px;
         padding-right: 15px;
-
+        
         &:first-child {
+            margin-top: 90px;
             font-family: $sans-serif-semi-bold;
             font-size: 1.5em;
             color: $white;

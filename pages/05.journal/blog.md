@@ -1,5 +1,5 @@
 ---
-title: 'Inside the brain of Bacon…maybe…'
+title: 'Inside the brain of Bacon'
 menu: 'Journal'
 published: true
 content:

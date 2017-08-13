@@ -38,6 +38,14 @@
         img {
             display: none;
         }
+
+        .journal-feed-content {
+            
+            a {
+                display: block;
+                margin-top: 25px;
+            }
+        }
     }
 
     .journal-hero {
@@ -67,6 +75,7 @@
     .journal-information {
         padding-top: $padding-base-by-2;
         padding-bottom: $padding-base-by-2;
+        padding-left: $padding-base-by-2;
 
         .list-blog-date {
             font-size: .875em;

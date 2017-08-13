@@ -19,7 +19,9 @@
                         <span class="list-blog-date"><span>Posted on <span>{{ child.date|date("M d, Y") }}</span></span></span>
                     </section>
                     <div class="journal-feed-content">
-                        <p>{{ child.summary }}<a href="{{ child.url }}" class="button-link"><button class="u-center dark" type="button">Read more&hellip;</button></a></p>
+                        <p>{{ child.summary|striptags|truncate(200) }}
+                            <a href="{{ child.url }}" class="button-link"><button class="u-center dark" type="button">Read more&hellip;</button></a>
+                        </p>
                     </div>
                 </div>
             </div>

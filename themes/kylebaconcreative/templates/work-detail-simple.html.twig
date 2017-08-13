@@ -27,7 +27,8 @@
                 {% endfor %}
             {% endif %}
             {% if ph.twocolumn == true %}
-                <div class="grid flex-grid--gutters container marg-bot">
+            <div class="container">
+                <div class="grid flex-grid--gutters marg-bot">
                     {% for assets in ph.twocolumncontent.assets %}
                         <div class="col col--width__six church-icon-set-container {{ assets.class }}">
                             <img src="{{ page.media[assets.image].url }}" alt="{{ assets.alt }}" />
@@ -35,6 +36,7 @@
                         </div>
                     {% endfor %}
                 </div>
+            </div>
             {% endif %}
         </section>
         {% if ph.footer == true %}
