@@ -2,9 +2,11 @@
 
     .type-image {
         width: 100%;
-        padding-right: $padding-base-by-2;
+        padding : $padding-base-by-2;
         display: block;
         margin-top: $padding-base-by-2;
+        background-color: $white;
+        border-radius: 30px;
     }
 }
 
@@ -140,7 +142,7 @@
     .work-detail-iconography {
 
         .icon-circle {
-            
+
             &:first-child,
             &:nth-child(2),
             &:nth-child(3),

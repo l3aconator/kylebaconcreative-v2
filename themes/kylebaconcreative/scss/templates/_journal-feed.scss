@@ -40,7 +40,7 @@
         }
 
         .journal-feed-content {
-            
+
             a {
                 display: block;
                 margin-top: 25px;
@@ -57,6 +57,7 @@
             padding-right: $padding-base-by-2;
             font-size: 1.75em;
             word-wrap: break-word;
+            margin-bottom: 0px;
         }
     }
 
@@ -73,12 +74,20 @@
     }
 
     .journal-information {
-        padding-top: $padding-base-by-2;
-        padding-bottom: $padding-base-by-2;
-        padding-left: $padding-base-by-2;
+        padding: $padding-base-by-2;
 
         .list-blog-date {
             font-size: .875em;
+        }
+    }
+}
+
+@media (max-width: 951px) {
+
+    .journal-feed {
+
+        .journal-feed-item {
+            height: 100%;
         }
     }
 }

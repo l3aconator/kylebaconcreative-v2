@@ -83,7 +83,7 @@
         margin-right: -15px;
         padding-left: 15px;
         padding-right: 15px;
-        
+
         &:first-child {
             margin-top: 90px;
             font-family: $sans-serif-semi-bold;
@@ -192,5 +192,99 @@
     &:active,
     &:focus {
         color: #c2c2c2;
+    }
+}
+
+@media (max-width: 951px) {
+
+    .journal-main-heading {
+        padding-top: 12%;
+        word-wrap: break-word;
+    }
+
+    .journal-hero {
+        min-height: 366px;
+    }
+
+    .journal-bar {
+        padding: 60px 30px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+
+    .journal-hero {
+        min-height: 275px;
+    }
+
+    .journal-information {
+        padding-left: 50px;
+
+        &.main-content {
+            margin-top: 0px;
+        }
+    }
+
+    .journal-main-heading {
+        font-size: 40px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+        margin-bottom: 0px;
+    }
+
+    .journal-item {
+
+        p {
+
+            &:first-child {
+                margin-top: 0px;
+                font-size: 1.2em;
+            }
+        }
+
+        img {
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+
+            &.full {
+                width: 100%;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            &.half {
+                width: 100%;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+
+            &.thirds {
+                width: 100%;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+
+            &.float-left {
+                float: none;
+            }
+        }
     }
 }

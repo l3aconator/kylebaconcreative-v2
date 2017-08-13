@@ -20,7 +20,7 @@ process:
                     <h2 class="h4">He also loves helping people on the web and breathing life into the digital world. He's currently working at TeamSnap.</h2>
                 </div>
                 <div class="col col--width__five">
-                    headshot goes here
+                <!-- TODO: ADD HEADSHOT, ADD BACKGROUND PATTERN, MAKE LOGO INTERACTIVE WITH MOUSE -->
                 </div>
             </div>
         </div>

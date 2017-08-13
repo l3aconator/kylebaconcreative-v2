@@ -54,17 +54,19 @@
             {% endif %}
         </section>
         {%if ph.squaretall == true %}
-        <section class="work-detail-middle container">
-            <div class="grid flex-grid--gutters">
-                <div class="col col--width__six">
-                    <div class="work-detail-secondary-img">
-                        <img class src="{{ page.media[ph.squareimage].url }}" alt="{{ ph.squarealt }}" />
+        <section class="work-detail-middle">
+            <div class="container">
+                <div class="grid flex-grid--gutters">
+                    <div class="col col--width__six">
+                        <div class="work-detail-secondary-img">
+                            <img class src="{{ page.media[ph.squareimage].url }}" alt="{{ ph.squarealt }}" />
+                        </div>
+                        <p>{{ ph.squareimagecaption }}</p>
                     </div>
-                    <p>{{ ph.squareimagecaption }}</p>
-                </div>
-                <div class="col col--width__six">
-                    <div class ="work-detail-tall-img">
-                        <img src="{{ page.media[ph.tallimage].url }}" alt="{{ ph.tallalt }}" />
+                    <div class="col col--width__six">
+                        <div class ="work-detail-tall-img">
+                            <img src="{{ page.media[ph.tallimage].url }}" alt="{{ ph.tallalt }}" />
+                        </div>
                     </div>
                 </div>
             </div>

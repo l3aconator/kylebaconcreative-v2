@@ -126,3 +126,28 @@
         }
     }
 }
+
+@media (max-width: 479px) {
+
+    .home {
+        
+        .page-hero {
+            margin-bottom: 10vh;
+            height: 45vh;
+        }
+    }
+
+
+
+    .page-hero {
+        margin-top: 130px;
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.75em;
+        }
+    }
+}

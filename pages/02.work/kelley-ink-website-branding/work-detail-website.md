@@ -30,7 +30,7 @@ tools:
     css: true
     js: true
 
-homepagepreview: 'kelley-ink-preview.png'
+homepagepreview: 'homepage-preview.jpg'
 homepageteaser: 'Web design, development, and branding for Kelley, Ink, a successful one-woman content writing and project managment business.'
 homepagebutton: true
 homepagebuttontext: 'Check it out'

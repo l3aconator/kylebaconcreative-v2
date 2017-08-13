@@ -174,28 +174,6 @@
     .cta-text {
         margin-bottom: 30px;
     }
-
-    /*About page*/
-
-    /* Journal page   */
-    .journal-content {
-        padding: 15px 30px 0px 30px;
-    }
-
-    .journal-main-heading {
-        padding-top: 12%;
-        word-wrap: break-word;
-    }
-
-    .journal-hero {
-        min-height: 366px;
-    }
-
-    .journal-bar {
-        padding: 60px 30px;
-        margin-top: 30px;
-    }
-
 }
 
 /*Phone*/
@@ -219,63 +197,5 @@
 
     .footer {
         margin-bottom: 15px;
-    }
-
-    /*  Journal page  */
-    .journal-hero {
-        min-height: 275px;
-    }
-
-    .journal-information.main-content {
-        margin-top: 0px;
-    }
-
-    .journal-main-heading {
-        padding-left: 30px;
-        padding-top: 30px;
-        padding-right: 30px;
-    }
-
-    .journal-item img {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .journal-item img.full {
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .journal-item img.half {
-        width: 100%;
-    }
-
-    .journal-item img.half:first-child {
-        margin-left: 0px;
-    }
-
-    .journal-item img.half:last-child {
-        margin-right: 0px;
-    }
-
-    .journal-item img.thirds {
-        width: 100%;
-    }
-
-    .journal-item img.thirds:first-child {
-        margin-left: 0px;
-    }
-
-    .journal-item img.thirds:last-child {
-        margin-right: 0px;
-    }
-
-    .journal-item img.float-left {
-        float: none;
     }
 }
