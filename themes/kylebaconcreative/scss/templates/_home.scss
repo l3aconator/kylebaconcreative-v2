@@ -1,9 +1,8 @@
 .home {
 
     .page-hero {
-        margin-bottom: 90px;
-        height: 65vh;
-        margin-top: 20vh;
+        margin-bottom: 100px;
+        margin-top: 50px;
 
         h1 {
             color: $turq;
@@ -130,10 +129,10 @@
 @media (max-width: 479px) {
 
     .home {
-        
+
         .page-hero {
-            margin-bottom: 10vh;
-            height: 45vh;
+            margin-bottom: 100px;
+            margin-top: 175px;
         }
     }
 
