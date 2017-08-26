@@ -41,7 +41,7 @@ tallalt: 'A look at the branding system.'
 # footeralt: 'A spread from the Bops Fest Events booklet'
 
 taxonomy:
-    tag: [Print, Typography, Branding, Web/UX]
+    tag: [featured, Print, Typography, Branding, Web/UX]
 ---
 A diverse audience and large brand posed quite a challenge to produce something cohesive, flexible, and understandable that was rooted in the brand’s key characteristics. “Loving people…because people matter” is the life blood of this solution. It’s all about people, friendliness, and care. The line quality of the icons/bridge and main typeface is soft and thick to still provide feelings of strength and foundation. It is a nice balance between friendly and industrial. The icon system was very key to nail down for flexibility and easy recognition once the audience is trained. The color palette is on the softer side and each color has significance to the program it represents.
 
