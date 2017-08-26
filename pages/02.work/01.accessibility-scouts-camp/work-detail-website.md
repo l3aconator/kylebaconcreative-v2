@@ -1,72 +1,64 @@
 ---
-title: 'accessibilityscouts.camp'
+title: 'Accessibility Scouts Camp'
 metadata:
     description: 'Learn how to make your sites accessible with accessibility scouts camp, built by Kyle Bacon'
     'og:title': 'accessibilityscouts.camp, make your sites accessible'
     'og:type': 'website'
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/accessibility-scouts-camp/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/01.accessibility-scouts-camp/middle-image-hero.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/accessibility-scouts-camp/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/01.accessibility-scouts-camp/homepage-preview.jpg'
     'twitter:card': 'Learn how to make your sites accessible with accessibilityscouts.camp. It isn’t as hard as it looks and you can earn badges while you are at it.'
     'twitter:title': 'accessibilityscouts.camp, make your sites accessible'
     'twitter:description': 'Learn how to make your sites accessible with accessibilityscouts.camp. It isn’t as hard as it looks and you can earn badges while you are at it.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/01.accessibility-scouts-camp/middle-image-hero.jpg'
-
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/01.accessibility-scouts-camp/homepage-preview.jpg'
 datacategoryone: web
-
 taxonomy:
-    tag: [featured, Web/UX, Marketing, HTML5, CSS3, GravCMS]
+    tag: [featured, Web/UX, HTML5, CSS3, GravCMS]
 
-homepagepreview: 'kelley-ink-preview.png'
-homepageteaser: 'Web design, development, and branding for Kelley, Ink, a successful one-woman content writing and project managment business.'
-homepagebutton: true
-homepagebuttontext: 'Check it out'
+homepagepreview: 'homepage-preview.jpg'
+homepageteaser: 'Helping you make the web a better place. There’s a hole in the industry when it comes to creating accessibile websites. This online camp gets you up and running in a easy-to-understand manner.'
 
-heroimage: 'page-header.jpg'
-heroimagealt: 'A close up picture of the homepage of Kelley, Ink'
+heroimage: 'accessibility-header.jpg'
+heroimagealt: 'The homepage image form accessibilityscouts.camp.'
+
+circleteaserone: true
+circleteaseroneimage: 'circle-big.png'
 
 circleteasertwo: true
-circleteasertwoimage: 'circle-teaser.jpg'
+circleteasertwoimage: 'colophon.png'
 
 workdetailwebsiteprimary: true
-workdetailwebsiteprimaryhero: 'middle-image-hero.jpg'
-workdetailwebsiteprimaryheroalt: 'A blurred out image of the type animation on the homepage'
-
-workdetailwebsiteprimaryheading: 'The logo'
-workdetailwebsiteprimarycontent: 'The logo was concepted to be simple in nature and pay homage to her love for typewriters and more importantly, communication. She wanted something that was bespoke to her and something instantly digestible for her brand.'
-workdetailwebsiteprimarycontentmainimage: 'logo.jpg'
-workdetailwebsiteprimarycontentbgimagealt: 'Different logos and colors for Kelley, Ink'
-workdetailwebsiteprimaryurl: 'http://kelley.ink/'
+workdetailwebsiteprimaryhero: 'accessibility-middle.jpg'
+workdetailwebsiteprimaryheroalt: 'A preview of the badges page.'
+workdetailwebsiteprimaryheading: 'The concept'
+workdetailwebsiteprimarycontent: 'The web is a wonderful and scary place, but mostly wonderful. The access to information is astounding but most of it, is only accessible to those who are without impairments. The following manuals within this camp is to get you ready for the wild forest of the Internet and make it usable for all. (Or as close as we can get!)'
+workdetailwebsiteprimarycontentmainimage: 'accessibility-1.jpg'
+workdetailwebsiteprimarycontentbgimagealt: 'A preview of one of the illustrations on the site.'
+workdetailwebsiteprimarybutton: 'Go to the site'
+workdetailwebsiteprimaryurl: 'https://accessibilityscouts.camp/'
 
 workdetailwebsitesecondary: true
-workdetailwebsitesecondaryheading: 'Typewriter animations'
-workdetailwebsitesecondarycontent: 'Inherent with web as the medium, we have the option to take inspiration from the real world and inject it into websites if the conceptual direction calls for it. Not just because we can, but because it makes sense and helps to tell the story. In this case, on the blog, testimonial page, certain button elements, and others, we took the concept of pressing a button to make a mark on paper to the digital realm because it made sense and helped the narrative.'
-workdetailwebsitesecondarycontentmainimage: 'middle-image.jpg'
-workdetailwebsitesecondarycontentmainimagealt: 'A preview image of the Kelley.Ink blog developed by Kyle Bacon'
-workdetailwebsitesecondarybutton: 'See the blog'
-workdetailwebsitesecondaryurl: 'http://kelley.ink/blog'
+workdetailwebsitesecondaryheading: 'Content, code, illustration, and design'
+workdetailwebsitesecondarycontent: 'The content, code, illustration, and design was all hand-crafted with love. I like to pride myself in being a one stop shop for most things. Especially code and design. The site includes a colophon of the site development stack and little design details.'
+workdetailwebsitesecondarycontentmainimage: 'accessibility-2.jpg'
+workdetailwebsitesecondarycontentmainimagealt: 'The code behind the scenes.'
+workdetailwebsitesecondarybutton: 'Go to the site colophon'
+workdetailwebsitesecondaryurl: 'https://accessibilityscouts.camp/about/colophon'
 
 workdetailwebsitelast: true
-workdetailwebsitelastheading: 'Work Templates'
-workdetailwebsitelastcontent: 'Built two easy-to-use and update templates to present her communication work to prospective clients. Allows for any type of image, content, and button endpoint, whether that be opening a PDF or going to another site.'
-workdetailwebsitelastcontentmainimage: 'work-template.jpg'
-workdetailwebsitelastcontentmainimagealt: 'A preview image of the Kelley.Ink case study worked template developed by Kyle Bacon'
-workdetailwebsitelastbutton: 'See a template live'
-workdetailwebsitelasturl: 'http://kelley.ink/work/health-republic-insurance-website'
-
-workdetailwebsitetertiary: true
-workdetailwebsitetertiaryheading: 'CUSTOM BUILT WITH GRAV CMS'
-workdetailwebsitetertiarycontent: 'I am well versed in developing sites with <a class="text-link white" href="https://getgrav.org/" target="_blank">GravCMS</a>. It is very flexible, versatile, and customizable to the concept and needs of any site, big or small. <a class="text-link white" href="/contact">Contact me</a> for your next web development project. I am an end-to-end Front end designer and developer; carrying you from concept to execution.'
-workdetailwebsitetertiarycontentbgimage: 'grav-closeup.jpg'
-workdetailwebsitetertiarycontentbgimagealt: 'A close up of the Grav CMS Dashboard'
-workdetailwebsitetertiarycontentmainimage: 'grav-full.jpg'
-workdetailwebsitetertiarycontentmainimagealt: 'An image of the Grav CMS Dashboard'
+workdetailwebsitelastheading: 'Badges!'
+workdetailwebsitelastcontent: 'Though a silly incentive, it is a fun one. Once a user completes an article—and created an account—they have the ability to track their progess through the badges that they earn. It is setup as a little API for future additions and refactoring of the site.'
+workdetailwebsitelastcontentmainimage: 'accessibility-3.jpg'
+workdetailwebsitelastcontentmainimagealt: 'Pattern of camp badges.'
+workdetailwebsitelastbutton: 'Go to the badges page'
+workdetailwebsitelasturl: 'https://accessibilityscouts.camp/badge'
 
 workdetailwebsitefooter: true
-workdetailwebsitefooterheading: 'Who doesn’t love babies?'
-workdetailwebsitefootercontent: 'Kelley has two wonderful kids and we wanted to take the opportunity to make the 404 page comical, friendly, and personal to brighten someone’s day and ease the pain of not landing where they should’ve'
-workdetailwebsitefooterimage: 'baby404.jpg'
-workdetailwebsitefooterimagealt: 'A preview of the Kelley, Ink 404 page.'
+workdetailwebsitefooterheading: 'Camp manuals'
+workdetailwebsitefootercontent: 'The camp is split up into manuals of the different sense used on the web. Each section has their own set of badges and challenges to keep in mind when designing and coding on the web.'
 
-
+workdetailwebsitefooterimage: 'accessibility-footer.jpg'
+workdetailwebsitefooterimagealt: 'The camp manual images.'
 ---
-xxx
+This project is for Kyle Bacon’s senior thesis in the Portland State Graphic Design program. It is heavily inspired by camping and scout field manuals because the forest of the digital world is a scary place and should be accessible for all. This guide is meant to get people up to speed in creating accessible Internet experience as quickly as possible in a fun and quirky manner.
+
+This site is by no means 100% complete as of launch and a project I hope to maintain, perfect, and build upon in the future to keep up with changes in technologies and improving the learning experience. (It's also open source, so slap in a PR if you'd like.)

@@ -5,12 +5,12 @@ metadata:
     description: 'This MAX train wrap was part of Health Republic’s 2014 Open Enrollment ad buy. It ran for the duration of three months.'
     'og:title': 'Health Republic MAX Train Wrap'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/health-republic-max-train-wrap/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/health-republic-max-train-wrap/full-side-one-hric-max.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/health-republic-max-train-wrap/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/15.health-republic-max-train-wrap/full-side-one-hric-max.jpg'
     'twitter:card': 'This MAX train wrap was part of Health Republic’s 2014 Open Enrollment ad buy. It ran for the duration of three months.'
     'twitter:title': 'Health Republic MAX Train Wrap'
     'twitter:description': 'This MAX train wrap was part of Health Republic’s 2014 Open Enrollment ad buy. It ran for the duration of three months.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/health-republic-max-train-wrap/full-side-one-hric-max.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/15.health-republic-max-train-wrap/full-side-one-hric-max.jpg'
 
 datacategoryone: print
 datacategorytwo: branding

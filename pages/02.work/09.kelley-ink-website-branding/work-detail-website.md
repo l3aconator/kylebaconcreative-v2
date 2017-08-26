@@ -8,12 +8,12 @@ metadata:
     description: 'Web design, development, and branding for Kelley,Ink, a successful one-woman content writing and project managment business.'
     'og:title': 'Kelley, Ink Website and Branding'
     'og:type': 'website'
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/kelley-ink-website-branding/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/kelley-ink-website-branding/middle-image-hero.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/09.kelley-ink-website-branding/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/09.kelley-ink-website-branding/middle-image-hero.jpg'
     'twitter:card': 'Web design, development, and branding for Kelley,Ink, a successful one-woman content writing and project managment business.'
     'twitter:title': 'Kelley, Ink Website and Branding'
     'twitter:description': 'Web design, development, and branding for Kelley,Ink, a successful one-woman content writing and project managment business.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/kelley-ink-website-branding/middle-image-hero.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/kelley-ink-website-branding/middle-image-hero.jpg'
 
 datacategoryone: web
 

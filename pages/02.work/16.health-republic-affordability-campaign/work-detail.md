@@ -5,12 +5,12 @@ metadata:
     description: 'There is a lot of confusion in the health insurance market concerning what happens if you aren’t covered and whether or not low-income individuals and families can afford to have coverage. This infographic was created to help ease that confusion and show that it’s possible to afford insurance. A postcard was also created sent out informing target neighborhoods about how to afford health insurance.'
     'og:title': 'Health Republic Affordability Campaign'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/health-republic-affordability-campaign/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/health-republic-affordability-campaign/header-image-affordability-campaign.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/health-republic-affordability-campaign/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/16.health-republic-affordability-campaign/header-image-affordability-campaign.jpg'
     'twitter:card': 'There is a lot of confusion in the health insurance market concerning what happens if you aren’t covered and whether or not low-income individuals and families can afford to have coverage. This infographic was created to help ease that confusion and show that it’s possible to afford insurance. A postcard was also created sent out informing target neighborhoods about how to afford health insurance.'
     'twitter:title': 'Health Republic Affordability Campaign'
     'twitter:description': 'There is a lot of confusion in the health insurance market concerning what happens if you aren’t covered and whether or not low-income individuals and families can afford to have coverage. This infographic was created to help ease that confusion and show that it’s possible to afford insurance. A postcard was also created sent out informing target neighborhoods about how to afford health insurance.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/health-republic-affordability-campaign/header-image-affordability-campaign.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/16.health-republic-affordability-campaign/header-image-affordability-campaign.jpg'
 
 datacategoryone: print
 datacategorytwo: illustration

@@ -5,12 +5,12 @@ metadata:
     description: 'Chosen illustration for an article in the Portland State Vanguard. The article is about what to do when your “professor sucks,” how to find out if they suck, and the different repercussions of trying to problem solve your situation.'
     'og:title': '“But What If My Professor Sucks” Editorial Illustration'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/but-what-if-my-professor-sucks-editorial-illustration/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/but-what-if-my-professor-sucks-editorial-illustration/newspaper-professor-editorial.jpeg'
+    'og:url': 'http://www.kylebaconcreative.com/work/but-what-if-my-professor-sucks-editorial-illustration/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/17.but-what-if-my-professor-sucks-editorial-illustration/newspaper-professor-editorial.jpeg'
     'twitter:card': 'Chosen illustration for an article in the Portland State Vanguard. The article is about what to do when your “professor sucks,” how to find out if they suck, and the different repercussions of trying to problem solve your situation.'
     'twitter:title': '“But What If My Professor Sucks” Editorial Illustration'
     'twitter:description': 'Chosen illustration for an article in the Portland State Vanguard. The article is about what to do when your “professor sucks,” how to find out if they suck, and the different repercussions of trying to problem solve your situation.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/but-what-if-my-professor-sucks-editorial-illustration/newspaper-professor-editorial.jpeg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/17.but-what-if-my-professor-sucks-editorial-illustration/newspaper-professor-editorial.jpeg'
 
 datacategoryone: print
 datacategorytwo: illustration

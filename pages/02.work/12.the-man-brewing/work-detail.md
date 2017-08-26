@@ -5,12 +5,12 @@ metadata:
     description: 'During my market research, I observed that there aren’t a lot of beer options specifically geared towards the white collar world. With this brand, I capitalized on that hole in the market. The goal was to create three beers that the entity could launch with. I drew inspiration from working in an office environment and flipped some stereotypes on their heads. I chose for the labels of each the beers to tell the brand’s story rather than the main mark. That, in and of itself isn’t done very often but the decision was made to push the lightheartedness of The Man Brewing. It also brought in the “corporate overlord versus employee” cliché and applied it to a new industry in a fun approach.'
     'og:title': 'The Man Brewing'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/the-man-brewing/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/the-man-brewing/middle-image-the-man-brewing.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/the-man-brewing/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/12.the-man-brewing/middle-image-the-man-brewing.jpg'
     'twitter:card': 'During my market research, I observed that there aren’t a lot of beer options specifically geared towards the white collar world. With this brand, I capitalized on that hole in the market. The goal was to create three beers that the entity could launch with. I drew inspiration from working in an office environment and flipped some stereotypes on their heads. I chose for the labels of each the beers to tell the brand’s story rather than the main mark. That, in and of itself isn’t done very often but the decision was made to push the lightheartedness of The Man Brewing. It also brought in the “corporate overlord versus employee” cliché and applied it to a new industry in a fun approach.'
     'twitter:title': 'The Man Brewing'
     'twitter:description': 'During my market research, I observed that there aren’t a lot of beer options specifically geared towards the white collar world. With this brand, I capitalized on that hole in the market. The goal was to create three beers that the entity could launch with. I drew inspiration from working in an office environment and flipped some stereotypes on their heads. I chose for the labels of each the beers to tell the brand’s story rather than the main mark. That, in and of itself isn’t done very often but the decision was made to push the lightheartedness of The Man Brewing. It also brought in the “corporate overlord versus employee” cliché and applied it to a new industry in a fun approach.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/the-man-brewing/middle-image-the-man-brewing.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/12.the-man-brewing/middle-image-the-man-brewing.jpg'
 
 datacategoryone: print
 datacategorytwo: illustration

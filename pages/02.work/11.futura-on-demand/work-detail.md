@@ -5,12 +5,12 @@ metadata:
     description: 'During my research phase, I noticed that Futura was highly used during the 50s in the entertainment, music, and advertising industries. I took off running after reading Paul Renner’s quote, “…a modern typeface should express modern models rather than be a revival of previous design.” Today’s “modern” model of music is streaming audio, which is mostly accessed through mobile apps. I pushed the envelope by applying the concept of cutting edge music delivery into a type specimen book for such a groundbreaking typeface. I was especially inspired by Spotify and Pandora, both arguably leading the streaming audio revolution.'
     'og:title': 'Futura On-demand'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/futura-on-demand/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/futura-on-demand/middle-image-futura-on-demand.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/futura-on-demand/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/11.futura-on-demand/middle-image-futura-on-demand.jpg'
     'twitter:card': 'During my research phase, I noticed that Futura was highly used during the 50s in the entertainment, music, and advertising industries. I took off running after reading Paul Renner’s quote, “…a modern typeface should express modern models rather than be a revival of previous design.” Today’s “modern” model of music is streaming audio, which is mostly accessed through mobile apps. I pushed the envelope by applying the concept of cutting edge music delivery into a type specimen book for such a groundbreaking typeface. I was especially inspired by Spotify and Pandora, both arguably leading the streaming audio revolution.'
     'twitter:title': 'Futura On-demand'
     'twitter:description': 'During my research phase, I noticed that Futura was highly used during the 50s in the entertainment, music, and advertising industries. I took off running after reading Paul Renner’s quote, “…a modern typeface should express modern models rather than be a revival of previous design.” Today’s “modern” model of music is streaming audio, which is mostly accessed through mobile apps. I pushed the envelope by applying the concept of cutting edge music delivery into a type specimen book for such a groundbreaking typeface. I was especially inspired by Spotify and Pandora, both arguably leading the streaming audio revolution.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/futura-on-demand/middle-image-futura-on-demand.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/11.futura-on-demand/middle-image-futura-on-demand.jpg'
 
 datacategoryone: print
 

@@ -5,12 +5,12 @@ metadata:
     description: 'Dinner, television, and the 1950s? You had me at dinner. Who knew roaming around the PSU library with the task of finding inspiration and content for a zine would produce a topic as random as the invention of TV dinners. It was a blast writing original content and exploring a new illustration style inspired by the cartoon programming from the 50s.'
     'og:title': 'The Invention of TV Dinners Zine'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/the-invention-of-tv-dinners-zine/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/the-invention-of-tv-dinners-zine/image-tall-invention-tv-dinners.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/the-invention-of-tv-dinners-zine/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/13.the-invention-of-tv-dinners-zine/image-tall-invention-tv-dinners.jpg'
     'twitter:card': 'Dinner, television, and the 1950s? You had me at dinner. Who knew roaming around the PSU library with the task of finding inspiration and content for a zine would produce a topic as random as the invention of TV dinners. It was a blast writing original content and exploring a new illustration style inspired by the cartoon programming from the 50s.'
     'twitter:title': 'The Invention of TV Dinners Zine'
     'twitter:description': 'Dinner, television, and the 1950s? You had me at dinner. Who knew roaming around the PSU library with the task of finding inspiration and content for a zine would produce a topic as random as the invention of TV dinners. It was a blast writing original content and exploring a new illustration style inspired by the cartoon programming from the 50s.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/the-invention-of-tv-dinners-zine/image-tall-invention-tv-dinners.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/13.the-invention-of-tv-dinners-zine/image-tall-invention-tv-dinners.jpg'
 
 datacategoryone: print
 datacategorytwo: illustration

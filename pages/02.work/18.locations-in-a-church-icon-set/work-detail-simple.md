@@ -5,12 +5,12 @@ metadata:
     description: 'Religious iconography of this sort is hard to come by on the great Noun Project website. Here is a succinct set of important locations in a typical church.'
     'og:title': 'Locations In A Church Icon Set'
     'og:type': website
-    'og:url': 'http://www.kylebaconcreative.com/work-detail/locations-in-a-church-icon-set/'
-    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/locations-in-a-church-icon-set/header-image-church-icon-set.jpg'
+    'og:url': 'http://www.kylebaconcreative.com/work/locations-in-a-church-icon-set/'
+    'og:image': 'http://www.kylebaconcreative.com/user/pages/02.work/18.locations-in-a-church-icon-set/header-image-church-icon-set.jpg'
     'twitter:card': 'Religious iconography of this sort is hard to come by on the great Noun Project website. Here is a succinct set of important locations in a typical church.'
     'twitter:title': 'Locations In A Church Icon Set'
     'twitter:description': 'Religious iconography of this sort is hard to come by on the great Noun Project website. Here is a succinct set of important locations in a typical church.'
-    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work-detail/locations-in-a-church-icon-set/header-image-church-icon-set.jpg'
+    'twitter:image': 'http://www.kylebaconcreative.com/user/pages/02.work/18.locations-in-a-church-icon-set/header-image-church-icon-set.jpg'
 
 datacategoryone: web
 datacategorytwo: illustration
