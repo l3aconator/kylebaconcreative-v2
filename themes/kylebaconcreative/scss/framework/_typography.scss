@@ -81,6 +81,28 @@ p {
     }
 }
 
+ul {
+    font-size: 18px;
+
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+a {
+    color: $blue--light;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 200ms ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: lighten($blue--light, 20%);
+        text-decoration: underline;
+    }
+}
+
 // ---- Text Colors ----
 .text-white {
     color: white;
